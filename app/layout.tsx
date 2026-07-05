@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Cormorant_Garamond, Manrope } from 'next/font/google'
+import Script from 'next/script'
 
 const heading = Cormorant_Garamond({
   subsets: ['latin'],
@@ -28,7 +29,22 @@ export default function RootLayout({
       lang="pt"
       className={`${heading.variable} ${body.variable}`}
     >
-      <body suppressHydrationWarning>{children}</body>
+      <body suppressHydrationWarning>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-GGKKZ04FY3"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-GGKKZ04FY3');
+          `}
+        </Script>
+        {children}
+      </body>
     </html>
   )
 }
