@@ -1,11 +1,56 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Container from './Container'
 import { Mail, Phone } from 'lucide-react'
 
+gsap.registerPlugin(ScrollTrigger)
+
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
+  const contactRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from('.contact-header > *', {
+        scrollTrigger: {
+          trigger: '.contact-header',
+          start: 'top 80%',
+        },
+        y: 30,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: 'power3.out',
+      })
+
+      gsap.from('.contact-info', {
+        scrollTrigger: {
+          trigger: '.contact-info',
+          start: 'top 80%',
+        },
+        x: -30,
+        opacity: 0,
+        duration: 0.8,
+        ease: 'power3.out',
+      })
+
+      gsap.from('.contact-form', {
+        scrollTrigger: {
+          trigger: '.contact-form',
+          start: 'top 80%',
+        },
+        x: 30,
+        opacity: 0,
+        duration: 0.8,
+        ease: 'power3.out',
+      })
+    }, contactRef)
+
+    return () => ctx.revert()
+  }, [])
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -30,6 +75,7 @@ export default function Contact() {
 
   return (
     <section
+      ref={contactRef}
       id="contacto"
       className="bg-[#3d2d22] py-32 text-white"
     >
@@ -37,7 +83,7 @@ export default function Contact() {
 
         <div className="mx-auto max-w-5xl">
 
-          <div className="mb-20 text-center">
+          <div className="contact-header mb-20 text-center">
 
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-[#d6b48b]">
               Contacto
@@ -55,7 +101,7 @@ export default function Contact() {
 
           <div className="grid gap-16 lg:grid-cols-[1fr_2fr]">
 
-            <div>
+            <div className="contact-info">
 
               <h3 className="mb-10 text-3xl">
                 Contactos
@@ -116,7 +162,7 @@ export default function Contact() {
             </div>
 
             {submitted ? (
-              <div className="rounded-3xl bg-white p-10 text-center text-[#3d2d22]">
+              <div className="contact-form rounded-3xl bg-white p-10 text-center text-[#3d2d22]">
                 <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-green-100">
                   <svg
                     className="h-10 w-10 text-green-600"
@@ -144,7 +190,7 @@ export default function Contact() {
                 action="https://formspree.io/f/xeebnaaw"
                 method="POST"
                 onSubmit={handleSubmit}
-                className="space-y-6 rounded-3xl bg-white p-10 text-[#3d2d22]"
+                className="contact-form space-y-6 rounded-3xl bg-white p-10 text-[#3d2d22]"
               >
 
                 <div>

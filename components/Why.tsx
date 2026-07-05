@@ -1,9 +1,16 @@
+'use client'
+
+import { useEffect, useRef } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Container from './Container'
 import {
   Snowflake,
   ShieldCheck,
   UtensilsCrossed,
 } from 'lucide-react'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const items = [
   {
@@ -24,11 +31,42 @@ const items = [
 ]
 
 export default function Why() {
+  const whyRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from('.why-header > *', {
+        scrollTrigger: {
+          trigger: '.why-header',
+          start: 'top 80%',
+        },
+        y: 30,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: 'power3.out',
+      })
+
+      gsap.from('.why-item', {
+        scrollTrigger: {
+          trigger: '.why-items',
+          start: 'top 80%',
+        },
+        y: 50,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: 'power3.out',
+      })
+    }, whyRef)
+
+    return () => ctx.revert()
+  }, [])
   return (
-    <section className="bg-white/40">
+    <section ref={whyRef} className="bg-white/40">
       <Container>
 
-        <div className="mx-auto mb-20 max-w-3xl text-center">
+        <div className="why-header mx-auto mb-20 max-w-3xl text-center">
 
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-[#8b5a2b]">
             Porque Cloud & Crunch
@@ -45,7 +83,7 @@ export default function Why() {
 
         </div>
 
-        <div className="grid gap-12 lg:grid-cols-3">
+        <div className="why-items grid gap-12 lg:grid-cols-3">
 
           {items.map((item) => {
             const Icon = item.icon
@@ -53,7 +91,7 @@ export default function Why() {
             return (
               <article
                 key={item.title}
-                className="text-center"
+                className="why-item text-center"
               >
                 <div className="mx-auto mb-8 flex h-20 w-20 items-center justify-center rounded-full bg-[#efe2d5]">
 

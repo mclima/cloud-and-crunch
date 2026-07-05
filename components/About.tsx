@@ -1,9 +1,47 @@
+'use client'
+
+import { useEffect, useRef } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Image from 'next/image'
 import Container from './Container'
 
+gsap.registerPlugin(ScrollTrigger)
+
 export default function About() {
+  const aboutRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from('.about-image', {
+        scrollTrigger: {
+          trigger: '.about-image',
+          start: 'top 80%',
+        },
+        scale: 0.8,
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out',
+      })
+
+      gsap.from('.about-content > *', {
+        scrollTrigger: {
+          trigger: '.about-content',
+          start: 'top 80%',
+        },
+        y: 30,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: 'power3.out',
+      })
+    }, aboutRef)
+
+    return () => ctx.revert()
+  }, [])
   return (
     <section
+      ref={aboutRef}
       id="sobre"
       className="border-t border-stone-200/50 bg-white/30"
     >
@@ -11,7 +49,7 @@ export default function About() {
 
         <div className="grid items-center gap-20 lg:grid-cols-2">
 
-          <div className="flex justify-center">
+          <div className="about-image flex justify-center">
 
             <Image
               src="/images/cloud-crunch-icon.webp"
@@ -23,7 +61,7 @@ export default function About() {
 
           </div>
 
-          <div>
+          <div className="about-content">
 
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-[#8b5a2b]">
               Sobre

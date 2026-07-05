@@ -1,33 +1,78 @@
+'use client'
+
+import { useEffect, useRef } from 'react'
+import { gsap } from 'gsap'
 import Image from 'next/image'
 import Container from './Container'
 
 export default function Hero() {
+  const heroRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({ defaults: { ease: 'power3.out' } })
+      
+      tl.from('.hero-title', {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+      })
+      .from('.hero-subtitle', {
+        y: 30,
+        opacity: 0,
+        duration: 0.8,
+      }, '-=0.5')
+      .from('.hero-divider', {
+        scaleX: 0,
+        opacity: 0,
+        duration: 0.6,
+        transformOrigin: 'left',
+      }, '-=0.4')
+      .from('.hero-description', {
+        y: 20,
+        opacity: 0,
+        duration: 0.8,
+      }, '-=0.4')
+      .from('.hero-buttons', {
+        y: 20,
+        opacity: 0,
+        duration: 0.8,
+      }, '-=0.4')
+      .from('.hero-image', {
+        scale: 0.8,
+        opacity: 0,
+        duration: 1,
+      }, '-=0.8')
+    }, heroRef)
+
+    return () => ctx.revert()
+  }, [])
   return (
-    <section className="overflow-hidden pb-28 pt-24">
+    <section ref={heroRef} className="overflow-hidden pb-28 pt-24">
       <Container>
 
        <div className="grid lg:grid-cols-[58%_42%] items-center gap-8">
 
           <div>
 
-            <h1 className="mb-6 font-serif text-6xl leading-none text-[#3d2d22] lg:text-8xl whitespace-nowrap">
+            <h1 className="hero-title mb-6 font-serif text-6xl leading-none text-[#3d2d22] lg:text-8xl whitespace-nowrap">
               Cloud & Crunch
             </h1>
 
-            <p className="mb-10 font-serif text-3xl italic text-[#8b5a2b]">
+            <p className="hero-subtitle mb-10 font-serif text-3xl italic text-[#8b5a2b]">
               Uma sobremesa cremosa e irresistível.
             </p>
 
-            <div className="mb-10 h-px w-32 bg-[#c8b29a]" />
+            <div className="hero-divider mb-10 h-px w-32 bg-[#c8b29a]" />
 
-            <p className="max-w-xl text-lg leading-9 text-stone-700">
+            <p className="hero-description max-w-xl text-lg leading-9 text-stone-700">
               Criámos uma sobremesa gelada artesanal que combina uma
               textura incrivelmente cremosa com um toque
               crocante, para transformar qualquer refeição
               num momento especial.
             </p>
 
-            <div className="mt-14 flex flex-wrap gap-5">
+            <div className="hero-buttons mt-14 flex flex-wrap gap-5">
 
               <a
   href="#contacto"
@@ -47,7 +92,7 @@ export default function Hero() {
 
           </div>
 
-          <div className="relative">
+          <div className="hero-image relative">
 
             <div className="absolute inset-0 rounded-full bg-[#efe2d5] blur-3xl" />
 
