@@ -15,6 +15,10 @@ const links = [
     href: '#encomendar',
   },
   {
+    label: 'Porquê',
+    href: '#porque',
+  },
+  {
     label: 'Contacto',
     href: '#contacto',
   },

@@ -63,7 +63,7 @@ export default function Why() {
     return () => ctx.revert()
   }, [])
   return (
-    <section ref={whyRef} className="bg-white/40">
+    <section ref={whyRef} id="porque" className="bg-white/40">
       <Container>
 
         <div className="why-header mx-auto mb-20 max-w-3xl text-center">
