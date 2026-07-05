@@ -1,0 +1,71 @@
+import Image from 'next/image'
+import Container from './Container'
+
+export default function Hero() {
+  return (
+    <section className="overflow-hidden pb-28 pt-24">
+      <Container>
+
+       <div className="grid lg:grid-cols-[58%_42%] items-center gap-8">
+
+          <div>
+
+            <h1 className="mb-6 font-serif text-6xl leading-none text-[#3d2d22] lg:text-8xl whitespace-nowrap">
+              Cloud & Crunch
+            </h1>
+
+            <p className="mb-10 font-serif text-3xl italic text-[#8b5a2b]">
+              Uma sobremesa cremosa e irresistível.
+            </p>
+
+            <div className="mb-10 h-px w-32 bg-[#c8b29a]" />
+
+            <p className="max-w-xl text-lg leading-9 text-stone-700">
+              Criámos uma sobremesa gelada artesanal que combina uma
+              textura incrivelmente cremosa com um toque
+              crocante, para transformar qualquer refeição
+              num momento especial.
+            </p>
+
+            <div className="mt-14 flex flex-wrap gap-5">
+
+              <a
+  href="#contacto"
+  className="rounded-xl bg-[#8b5a2b] px-9 py-4 font-medium text-white transition hover:bg-[#6e4520]"
+>
+  Fazer Encomenda
+</a>
+
+              <a
+                href="tel:+351913593662"
+                className="rounded-xl border border-[#8b5a2b] px-9 py-4 font-medium text-[#8b5a2b] transition hover:bg-[#8b5a2b] hover:text-white"
+              >
+                Falar Connosco
+              </a>
+
+            </div>
+
+          </div>
+
+          <div className="relative">
+
+            <div className="absolute inset-0 rounded-full bg-[#efe2d5] blur-3xl" />
+
+            <Image
+              src="/images/cloud-crunch-hero-5.webp"
+              alt="Cloud & Crunch"
+              width={850}
+              height={850}
+              priority
+              className="relative mx-auto"
+              style={{ height: 'auto' }}
+            />
+
+          </div>
+
+        </div>
+
+      </Container>
+    </section>
+  )
+}
