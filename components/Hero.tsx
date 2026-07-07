@@ -55,7 +55,7 @@ export default function Hero() {
 
           <div>
 
-            <h1 className="hero-title mb-6 font-serif text-5xl leading-tight text-[#3d2d22] sm:text-6xl md:text-7xl lg:text-8xl lg:leading-none">
+            <h1 className="hero-title mb-6 font-serif text-5xl leading-tight text-[#3d2d22] sm:text-6xl md:text-7xl md:whitespace-nowrap lg:text-8xl lg:leading-none">
               Cloud & Crunch
             </h1>
 
