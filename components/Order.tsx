@@ -79,7 +79,7 @@ export default function Order() {
 
           <div className="order-image flex items-center justify-center">
             <Image
-              src="/images/cloud-crunch-order-dessert.png"
+              src="/images/cloud-crunch-order-dessert.webp"
               alt="Cloud & Crunch Dessert"
               width={1000}
               height={1000}
