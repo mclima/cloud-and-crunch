@@ -269,11 +269,11 @@ export default function Contact() {
                       <option value="">
                         Selecione
                       </option>
-                      <option>25 unidades</option>
-                      <option>50 unidades</option>
-                      <option>100 unidades</option>
-                      <option>250 unidades</option>
-                      <option>Mais de 250 unidades</option>
+                      <option>20 unidades</option>
+                      <option>40 unidades</option>
+                      <option>60 unidades</option>
+                      <option>80 unidades</option>
+                      <option>Mais de 100 unidades</option>
                     </select>
 
                   </div>

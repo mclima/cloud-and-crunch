@@ -34,7 +34,7 @@ export default function Header() {
             alt="Cloud & Crunch"
             width={52}
             height={52}
-            style={{ height: 'auto' }}
+            style={{ width: 'auto', height: 'auto' }}
           />
 
           <span className="font-serif text-3xl text-[#3d2d22]">

@@ -56,7 +56,7 @@ export default function About() {
               alt="Cloud & Crunch"
               width={240}
               height={240}
-              style={{ height: 'auto' }}
+              style={{ width: 'auto', height: 'auto' }}
             />
 
           </div>

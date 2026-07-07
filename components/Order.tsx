@@ -1,76 +1,133 @@
+'use client'
+
+import { useEffect, useRef } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Container from './Container'
+import Image from 'next/image'
+import { Package, Mail, Truck } from 'lucide-react'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const steps = [
   {
-    number: '01',
-    title: 'Indique a quantidade',
-    description:
-      'Diga-nos quantas unidades pretende encomendar.',
+    number: '1',
+    icon: Package,
+    title: 'Indique a quantidade pretendida.',
   },
   {
-    number: '02',
-    title: 'Entre em contacto',
-    description:
-      'Fale connosco por telefone ou email para confirmar a encomenda.',
+    number: '2',
+    icon: Mail,
+    title: 'Entre em contacto.',
   },
   {
-    number: '03',
-    title: 'Receba a encomenda',
-    description:
-      'Combinamos a entrega para que receba tudo pronto a servir.',
+    number: '3',
+    icon: Truck,
+    title: 'Receba a sua encomenda.',
   },
 ]
 
 export default function Order() {
+  const orderRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from('.order-image', {
+        scrollTrigger: {
+          trigger: '.order-image',
+          start: 'top 80%',
+        },
+        scale: 0.9,
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out',
+      })
+
+      gsap.from('.order-header > *', {
+        scrollTrigger: {
+          trigger: '.order-header',
+          start: 'top 80%',
+        },
+        y: 30,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: 'power3.out',
+      })
+
+      gsap.from('.order-step', {
+        scrollTrigger: {
+          trigger: '.order-step',
+          start: 'top 85%',
+        },
+        y: 40,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: 'power3.out',
+      })
+    }, orderRef)
+
+    return () => ctx.revert()
+  }, [])
+
   return (
-    <section id="encomendar">
-      <Container>
+    <section ref={orderRef} id="encomendar">
+      <Container className="!max-w-7xl">
 
-        <div className="mx-auto mb-24 max-w-3xl text-center">
+        <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr]">
 
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-[#8b5a2b]">
-            Como Encomendar
-          </p>
+          <div className="order-image flex items-center justify-center">
+            <Image
+              src="/images/cloud-crunch-order-dessert.png"
+              alt="Cloud & Crunch Dessert"
+              width={1000}
+              height={1000}
+              priority
+              className="rounded-lg w-full h-auto"
+            />
+          </div>
 
-          <h2 className="mb-8 text-5xl text-[#3d2d22]">
-            É simples.
-          </h2>
+          <div className="flex flex-col justify-center">
+            <div className="order-header mb-12">
 
-          <p className="text-lg leading-9 text-stone-700">
-            Em apenas três passos pode ter a Cloud & Crunch
-            pronta para servir.
-          </p>
-
-        </div>
-
-        <div className="grid gap-16 lg:grid-cols-3">
-
-          {steps.map((step) => (
-            <div
-              key={step.number}
-              className="relative"
-            >
-
-              <div className="mb-10 flex items-center">
-
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#8b5a2b] text-xl font-semibold text-white">
-                  {step.number}
-                </div>
-
-                <div className="ml-6 hidden h-px flex-1 bg-[#d9c9bb] lg:block" />
-
-              </div>
-
-              <h3 className="mb-5 text-3xl text-[#3d2d22]">
-                {step.title}
-              </h3>
-
-              <p className="leading-8 text-stone-700">
-                {step.description}
+              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-[#8b5a2b]">
+                Como Encomendar
               </p>
 
+              <h2 className="text-5xl text-[#3d2d22]">
+                É simples.
+              </h2>
+
             </div>
-          ))}
+
+            <div className="grid grid-cols-3 gap-8">
+
+              {steps.map((step, index) => {
+                const Icon = step.icon
+                return (
+                  <div key={step.number} className="order-step flex flex-col items-center text-center">
+
+                    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full border-2 border-[#3d2d22] text-sm font-semibold text-[#3d2d22]">
+                      {step.number}
+                    </div>
+
+                    <Icon className="mb-4 h-12 w-12 text-[#3d2d22]" strokeWidth={1.5} />
+
+                    {index < steps.length - 1 && (
+                      <div className="absolute left-1/2 top-6 hidden h-px w-full bg-stone-300 lg:block" style={{ transform: 'translateX(50%)' }} />
+                    )}
+
+                    <p className="text-sm leading-relaxed text-stone-700">
+                      {step.title}
+                    </p>
+
+                  </div>
+                )
+              })}
+
+            </div>
+          </div>
 
         </div>
 

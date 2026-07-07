@@ -1,5 +1,5 @@
 import './globals.css'
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Cormorant_Garamond, Manrope } from 'next/font/google'
 import Script from 'next/script'
 
@@ -12,6 +12,10 @@ const body = Manrope({
   subsets: ['latin'],
   variable: '--font-body',
 })
+
+export const viewport: Viewport = {
+  themeColor: '#ffffff',
+}
 
 export const metadata: Metadata = {
   title: 'Cloud & Crunch',
@@ -39,7 +43,6 @@ export const metadata: Metadata = {
     ],
   },
   manifest: '/manifest.json',
-  themeColor: '#ffffff',
   other: {
     'msapplication-TileColor': '#ffffff',
     'msapplication-TileImage': '/ms-icon-144x144.png',

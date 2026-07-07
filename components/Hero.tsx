@@ -76,14 +76,14 @@ export default function Hero() {
 
               <a
   href="#contacto"
-  className="rounded-xl bg-[#8b5a2b] px-9 py-4 font-medium text-white transition hover:bg-[#6e4520]"
+  className="box-border flex h-14 w-52 items-center justify-center rounded-xl border border-[#8b5a2b] bg-[#8b5a2b] font-medium text-white transition hover:bg-[#6e4520]"
 >
   Fazer Encomenda
 </a>
 
               <a
                 href="tel:+351913593662"
-                className="rounded-xl border border-[#8b5a2b] px-9 py-4 font-medium text-[#8b5a2b] transition hover:bg-[#8b5a2b] hover:text-white"
+                className="box-border flex h-14 w-52 items-center justify-center rounded-xl border border-[#8b5a2b] font-medium text-[#8b5a2b] transition hover:bg-[#8b5a2b] hover:text-white"
               >
                 Falar Connosco
               </a>
