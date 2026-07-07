@@ -48,7 +48,7 @@ export default function Restaurants() {
           </p>
 
           <h2 className="mb-8 text-5xl leading-tight text-[#3d2d22]">
-            Uma sobremesa premium,
+            Uma sobremesa gelada premium,
             <br />
             pronta a servir.
           </h2>
