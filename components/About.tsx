@@ -49,7 +49,7 @@ export default function About() {
 
         <div className="grid items-center gap-20 lg:grid-cols-2">
 
-          <div className="about-image flex justify-center">
+          <div className="about-image hidden justify-center lg:flex">
 
             <Image
               src="/images/cloud-crunch-icon.webp"
