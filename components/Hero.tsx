@@ -51,7 +51,7 @@ export default function Hero() {
     <section ref={heroRef} className="overflow-hidden pb-28 pt-24">
       <Container>
 
-       <div className="grid lg:grid-cols-[58%_42%] items-center gap-8">
+       <div className="grid lg:grid-cols-[50%_50%] items-center gap-8">
 
           <div>
 
@@ -97,10 +97,10 @@ export default function Hero() {
             <div className="absolute inset-0 rounded-full bg-[#efe2d5] blur-3xl" />
 
             <Image
-              src="/images/cloud-crunch-hero-5.webp"
+              src="/images/cloud-and-crunch-hero.webp"
               alt="Cloud & Crunch"
-              width={850}
-              height={850}
+              width={1000}
+              height={1000}
               priority
               className="relative mx-auto"
               style={{ height: 'auto' }}

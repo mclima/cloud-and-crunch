@@ -26,7 +26,7 @@ const links = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-stone-200/40 bg-[#faf6f2]/90 backdrop-blur">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-stone-200/40 bg-[#faf6f2]/90 backdrop-blur">
       <Container className="flex h-20 items-center justify-between">
         <a href="/" className="flex items-center gap-4">
           <Image
