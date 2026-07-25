@@ -15,18 +15,18 @@ gsap.registerPlugin(ScrollTrigger)
 const items = [
   {
     icon: Snowflake,
-    title: 'Servida gelada',
-    text: 'Uma sobremesa pronta a servir, mantendo toda a sua cremosidade e qualidade.',
+    title: 'Frescura garantida',
+    text: 'Sobremesas prontas a servir, mantendo toda a sua qualidade e sabor original.',
   },
   {
     icon: UtensilsCrossed,
     title: 'Ideal para restauração',
-    text: 'Perfeita para restaurantes, cafés e eventos que procuram uma sobremesa diferenciadora.',
+    text: 'Perfeitas para restaurantes, cafés e eventos que procuram sobremesas diferenciadoras.',
   },
   {
     icon: ShieldCheck,
     title: 'Qualidade artesanal',
-    text: 'Preparada com dedicação e ingredientes cuidadosamente selecionados.',
+    text: 'Preparadas com dedicação e ingredientes cuidadosamente selecionados.',
   },
 ]
 
@@ -73,11 +73,11 @@ export default function Why() {
           </p>
 
           <h2 className="mb-8 text-5xl text-[#3d2d22]">
-            Simplesmente deliciosa.
+            Simplesmente deliciosas.
           </h2>
 
           <p className="text-lg leading-9 text-stone-700">
-            Uma sobremesa criada para oferecer qualidade,
+            Sobremesas criadas para oferecer qualidade,
             simplicidade e uma experiência memorável.
           </p>
 

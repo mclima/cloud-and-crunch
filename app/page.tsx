@@ -1,6 +1,7 @@
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
+import Products from '@/components/Products'
 import Restaurants from '@/components/Restaurants'
 import Order from '@/components/Order'
 import Why from '@/components/Why'
@@ -14,6 +15,7 @@ export default function Home() {
       <main className="pt-20">
         <Hero />
         <About />
+        <Products />
         <Restaurants />
         <Order />
         <Why />

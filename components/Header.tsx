@@ -7,6 +7,10 @@ const links = [
     href: '#sobre',
   },
   {
+    label: 'Produtos',
+    href: '#produtos',
+  },
+  {
     label: 'Restaurantes',
     href: '#restaurantes',
   },

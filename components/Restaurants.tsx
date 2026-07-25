@@ -48,15 +48,15 @@ export default function Restaurants() {
           </p>
 
           <h2 className="mb-8 text-5xl leading-tight text-[#3d2d22]">
-            Uma sobremesa gelada premium,
+            Sobremesas premium,
             <br />
-            pronta a servir.
+            prontas a servir.
           </h2>
 
           <p className="text-lg leading-9 text-stone-700">
-            Quer oferecer uma sobremesa diferenciadora sem
+            Quer oferecer sobremesas diferenciadoras sem
             aumentar o trabalho da sua equipa?
-            A Cloud & Crunch chega pronta a servir, com uma
+            Os produtos Cloud & Crunch chegam prontos a servir, com uma
             apresentação elegante e um sabor que conquista os
             clientes.
           </p>

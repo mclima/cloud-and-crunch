@@ -79,16 +79,16 @@ export default function About() {
             </p>
 
             <p className="mb-8 text-lg leading-9 text-stone-700">
-              Criámos uma sobremesa artesanal que combina uma
-              textura incrivelmente cremosa com um toque
-              crocante, para transformar qualquer refeição
-              num momento especial.
+              Desde a nossa Delicia Gelada aos queques e
+              cheesecakes, cada sobremesa é criada com
+              ingredientes de qualidade para transformar
+              qualquer refeição num momento especial.
             </p>
 
             <p className="text-lg leading-9 text-stone-700">
-              Ideal para restaurantes, cafés, eventos e para
-              todos os que apreciam uma sobremesa feita com
-              qualidade e dedicação.
+              Os nossos produtos são ideais para restaurantes,
+              cafés, eventos e para todos os que apreciam
+              sobremesas feitas com qualidade e dedicação.
             </p>
 
           </div>

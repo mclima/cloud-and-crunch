@@ -230,53 +230,22 @@ export default function Contact() {
 
                 </div>
 
-                <div className="grid gap-6 md:grid-cols-2">
+                <div>
 
-                  <div>
+                  <label
+                    htmlFor="email"
+                    className="mb-2 block text-sm font-medium"
+                  >
+                    Email
+                  </label>
 
-                    <label
-                      htmlFor="email"
-                      className="mb-2 block text-sm font-medium"
-                    >
-                      Email
-                    </label>
-
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      required
-                      className="w-full rounded-xl border border-stone-300 px-5 py-4 outline-none transition focus:border-[#8b5a2b]"
-                    />
-
-                  </div>
-
-                  <div>
-
-                    <label
-                      htmlFor="quantity"
-                      className="mb-2 block text-sm font-medium"
-                    >
-                      Quantidade
-                    </label>
-
-                    <select
-                      id="quantity"
-                      name="quantity"
-                      className="w-full rounded-xl border border-stone-300 bg-white px-5 py-4 outline-none transition focus:border-[#8b5a2b]"
-                      required
-                    >
-                      <option value="">
-                        Selecione
-                      </option>
-                      <option>20 unidades</option>
-                      <option>40 unidades</option>
-                      <option>60 unidades</option>
-                      <option>80 unidades</option>
-                      <option>Mais de 100 unidades</option>
-                    </select>
-
-                  </div>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    className="w-full rounded-xl border border-stone-300 px-5 py-4 outline-none transition focus:border-[#8b5a2b]"
+                  />
 
                 </div>
 
