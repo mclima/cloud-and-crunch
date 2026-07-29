@@ -79,7 +79,7 @@ export default function About() {
             </p>
 
             <p className="mb-8 text-lg leading-9 text-stone-700">
-              Desde a nossa Delicia Gelada aos queques e
+              Desde a nossa Delicia aos queques e
               cheesecakes, cada sobremesa é criada com
               ingredientes de qualidade para transformar
               qualquer refeição num momento especial.

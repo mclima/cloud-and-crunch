@@ -60,14 +60,14 @@ export default function Hero() {
             </h1>
 
             <p className="hero-subtitle mb-10 font-serif text-3xl italic text-[#8b5a2b]">
-              Delicia Gelada e outras sobremesas artesanais.
+              Delicia e outras sobremesas artesanais.
             </p>
 
             <div className="hero-divider mb-10 h-px w-32 bg-[#c8b29a]" />
 
             <p className="hero-description max-w-xl text-lg leading-9 text-stone-700">
               Criámos sobremesas artesanais que transformam qualquer
-              refeição num momento especial. Da nossa Delicia Gelada
+              refeição num momento especial. Da nossa Delicia
               aos queques e cheesecakes, cada produto é feito com
               dedicação e ingredientes de qualidade.
             </p>
