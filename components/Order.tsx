@@ -13,7 +13,7 @@ const steps = [
   {
     number: '1',
     icon: Package,
-    title: 'Indique a quantidade pretendida.',
+    title: 'Indique o produto e a quantidade pretendida.',
   },
   {
     number: '2',
@@ -55,6 +55,17 @@ export default function Order() {
         ease: 'power3.out',
       })
 
+      gsap.from('.order-button', {
+        scrollTrigger: {
+          trigger: '.order-button',
+          start: 'top 80%',
+        },
+        y: 20,
+        opacity: 0,
+        duration: 0.8,
+        ease: 'power3.out',
+      })
+
       gsap.from('.order-step', {
         scrollTrigger: {
           trigger: '.order-step',
@@ -89,7 +100,7 @@ export default function Order() {
           </div>
 
           <div className="flex flex-col justify-center">
-            <div className="order-header mb-12">
+            <div className="order-header mb-8">
 
               <p className="mb-3 text-xs font-semibold uppercase tracking-[0.35em] text-[#8b5a2b]">
                 Como Encomendar
@@ -101,7 +112,7 @@ export default function Order() {
 
             </div>
 
-            <div className="grid grid-cols-3 gap-8">
+            <div className="grid grid-cols-3 gap-8 mb-8">
 
               {steps.map((step, index) => {
                 const Icon = step.icon
@@ -127,6 +138,13 @@ export default function Order() {
               })}
 
             </div>
+
+            <a
+              href="#contacto"
+              className="order-button inline-flex h-14 w-52 items-center justify-center rounded-xl border border-[#8b5a2b] bg-[#8b5a2b] font-medium text-white transition hover:bg-[#6e4520]"
+            >
+              Fazer Encomenda
+            </a>
           </div>
 
         </div>
