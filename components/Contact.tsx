@@ -94,7 +94,7 @@ export default function Contact() {
             </h2>
 
             <p className="mx-auto max-w-2xl text-lg leading-9 text-stone-300">
-              Preencha o formulário abaixo e entraremos em contacto consigo para confirmar a disponibilidade, a quantidade pretendida e os detalhes da entrega.
+              Preencha o formulário abaixo e entraremos em contacto consigo para confirmar o produto, a quantidade pretendida, disponibilidade, e os detalhes da entrega.
             </p>
 
           </div>
