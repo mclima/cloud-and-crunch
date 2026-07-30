@@ -24,6 +24,16 @@ const products = [
     description: 'Queques artesanais macios e aromáticos, repletos de maçã fresca e passas suculentas. Ideais para acompanhar um café ou chá.',
     image: '/images/apple-raisin-queques.webp',
   },
+  {
+    name: 'Bolo Mocca',
+    description: 'Um bolo rico e aromático com sabor intenso a café e chocolate. Camadas macias e húmidas que derretem na boca, perfeito para os amantes de café.',
+    image: '/images/mocca-cake.webp',
+  },
+  {
+    name: 'Mousse de Manga',
+    description: 'Uma mousse leve e refrescante feita com mangas maduras e suculentas. Textura aveludada que proporciona uma experiência tropical irresistível.',
+    image: '/images/mousse-manga.webp',
+  },
 ]
 
 export default function Products() {
