@@ -13,31 +13,61 @@ const products = [
     name: 'Delicia',
     description: 'Uma sobremesa semi-fria artesanal que combina uma textura incrivelmente cremosa com um toque crocante. Perfeita para quem procura uma experiência refrescante e única.',
     image: '/images/delicia-gelada.webp',
+    category: 'Sobremesas',
   },
   {
     name: 'Cheesecake de Morango',
     description: 'Um cheesecake cremoso com uma camada generosa de morangos frescos. Uma sobremesa clássica feita com ingredientes de qualidade premium.',
     image: '/images/strawberry-cheescake.webp',
+    category: 'Sobremesas',
   },
   {
     name: 'Queques de Maçã e Passas',
     description: 'Queques artesanais macios e aromáticos, repletos de maçã fresca e passas suculentas. Ideais para acompanhar um café ou chá.',
     image: '/images/apple-raisin-queques.webp',
+    category: 'Sobremesas',
   },
   {
     name: 'Bolo Mocca',
     description: 'Um bolo rico e aromático com sabor intenso a café e chocolate. Camadas macias e húmidas que derretem na boca, perfeito para os amantes de café.',
     image: '/images/mocca-cake.webp',
+    category: 'Sobremesas',
   },
   {
     name: 'Mousse de Manga',
     description: 'Uma mousse leve e refrescante feita com mangas maduras e suculentas. Textura aveludada que proporciona uma experiência tropical irresistível.',
     image: '/images/mousse-manga.webp',
+    category: 'Sobremesas',
+  },
+  {
+    name: 'Quiche de Espinafres',
+    description: 'Uma quiche artesanal com espinafres frescos e queijo cremoso. Perfeita para um lanche saboroso ou refeição ligeira.',
+    image: '/images/quiche-espinafres.webp',
+    category: 'Bonus',
   },
 ]
 
 export default function Products() {
   const productsRef = useRef<HTMLElement>(null)
+
+  const groupedProducts = products.reduce((acc, product) => {
+    if (!acc[product.category]) {
+      acc[product.category] = []
+    }
+    acc[product.category].push(product)
+    return acc
+  }, {} as Record<string, typeof products>)
+
+  const categoryInfo: Record<string, { title: string; subtitle: string }> = {
+    Sobremesas: {
+      title: 'Sobremesas artesanais feitas com dedicação.',
+      subtitle: 'Cada sobremesa é cuidadosamente preparada com ingredientes selecionados para garantir qualidade e sabor excecional.',
+    },
+    Bonus: {
+      title: 'Bonus',
+      subtitle: 'Delícias especiais que complementam a nossa oferta.',
+    },
+  }
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -86,9 +116,9 @@ export default function Products() {
           </p>
 
           <h2 className="mb-8 text-5xl text-[#3d2d22]">
-            Sobremesas artesanais
+            Produtos artesanais
             <br />
-            feitas com dedicação.
+            feitos com dedicação.
           </h2>
 
           <p className="text-lg leading-9 text-stone-700">
@@ -98,37 +128,44 @@ export default function Products() {
 
         </div>
 
-        <div className="products-grid grid items-start gap-12 lg:grid-cols-3">
+        {Object.entries(groupedProducts).map(([category, categoryProducts]) => (
+          <div key={category} className="mb-20 last:mb-0">
+            <h3 className="mb-12 text-center text-3xl text-[#3d2d22]">
+              {categoryInfo[category]?.title || category}
+            </h3>
 
-          {products.map((product) => (
-            <article
-              key={product.name}
-              className="product-card group overflow-hidden rounded-3xl bg-[#faf6f2] transition-transform duration-300 hover:scale-[1.02]"
-            >
-              <div className="relative aspect-square overflow-hidden bg-[#faf6f2]">
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  width={600}
-                  height={600}
-                  className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
+            <div className="products-grid grid items-start gap-12 lg:grid-cols-3">
+              {categoryProducts.map((product) => (
+                <article
+                  key={product.name}
+                  className="product-card group overflow-hidden rounded-3xl bg-[#faf6f2] transition-transform duration-300 hover:scale-[1.02]"
+                >
+                  <div className="relative aspect-square overflow-hidden bg-[#faf6f2]">
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      width={600}
+                      height={600}
+                      className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
 
-              <div className="p-8">
-                <h3 className="mb-4 text-3xl text-[#3d2d22]">
-                  {product.name}
-                </h3>
+                  <div className="p-8">
+                    <h3 className="mb-4 text-3xl text-[#3d2d22]">
+                      {product.name}
+                    </h3>
 
-                <p className="leading-8 text-stone-700">
-                  {product.description}
-                </p>
-              </div>
+                    <p className="leading-8 text-stone-700">
+                      {product.description}
+                    </p>
+                  </div>
 
-            </article>
-          ))}
+                </article>
+              ))}
 
-        </div>
+            </div>
+          </div>
+        ))}
 
       </Container>
     </section>
