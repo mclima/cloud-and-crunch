@@ -18,13 +18,7 @@ export default function Footer() {
             >
               Login Restaurantes
             </a>
-            <span className="text-stone-600">|</span>
-            <a 
-              href="/publico" 
-              className="hover:text-[#8b5a2b] transition-colors"
-            >
-              Login Público
-            </a>
+            
           </div>
 
           <p>

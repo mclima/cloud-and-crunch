@@ -50,7 +50,7 @@ const products = [
     format: 'Bolo',
     capacity: '26x6,4cm',
     minQuantity: '1',
-    price: '33.00',
+    price: '35.00',
     image: '/images/strawberry-cheescake.webp',
   },
   {
@@ -90,7 +90,7 @@ const products = [
     format: 'Tarte',
     capacity: '28cm',
     minQuantity: '1',
-    price: '33.75',
+    price: '31.00',
     image: '/images/em-breve.webp',
   },
 ];
@@ -311,7 +311,50 @@ export default function PrecosPage() {
           <h2 className="text-3xl font-bold text-[#3d2d22] mb-8 border-b-4 border-[#8b5a2b] inline-block pb-2">
             Embalagem
           </h2>
-          <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div className="bg-white rounded-2xl shadow-lg overflow-hidden relative">
+            {/* Scroll indicators for mobile */}
+            <button 
+              onClick={(e) => {
+                const container = e.currentTarget.parentElement;
+                const table = container?.querySelector('.overflow-x-auto') as HTMLElement;
+                table?.scrollTo({ left: 0, behavior: 'smooth' });
+              }}
+              id="scroll-left-embalagem"
+              className="absolute left-4 top-4 bg-white/90 rounded-full p-2 md:hidden z-10 shadow-md hover:bg-white active:scale-95 transition-all opacity-0 pointer-events-none"
+              aria-label="Scroll table back to start"
+            >
+              <svg 
+                className="w-5 h-5 text-[#8b5a2b]" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button 
+              onClick={(e) => {
+                const container = e.currentTarget.parentElement;
+                const table = container?.querySelector('.overflow-x-auto') as HTMLElement;
+                const leftBtn = container?.querySelector('#scroll-left-embalagem') as HTMLElement;
+                table?.scrollTo({ left: table.scrollWidth, behavior: 'smooth' });
+                if (leftBtn) {
+                  leftBtn.classList.remove('opacity-0', 'pointer-events-none');
+                  leftBtn.classList.add('opacity-100');
+                }
+              }}
+              className="absolute right-4 top-4 bg-white/90 rounded-full p-2 md:hidden z-10 shadow-md hover:bg-white active:scale-95 transition-transform"
+              aria-label="Scroll table to see more columns"
+            >
+              <svg 
+                className="w-5 h-5 text-[#8b5a2b] animate-pulse" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead className="bg-[#3d2d22] text-white">
