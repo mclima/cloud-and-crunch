@@ -11,6 +11,22 @@ export default function Footer() {
             © 2026 Cloud & Crunch
           </p>
 
+          <div className="flex gap-6 text-sm">
+            <a 
+              href="/restaurantes" 
+              className="hover:text-[#8b5a2b] transition-colors"
+            >
+              Login Restaurantes
+            </a>
+            <span className="text-stone-600">|</span>
+            <a 
+              href="/publico" 
+              className="hover:text-[#8b5a2b] transition-colors"
+            >
+              Login Público
+            </a>
+          </div>
+
           <p>
             Feito com leveza para momentos doces.
           </p>
