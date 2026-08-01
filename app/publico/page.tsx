@@ -10,7 +10,7 @@ const products = [
     format: 'Tacinha',
     capacity: '240ml',
     minQuantity: 'Não Aplicável',
-    price: '1.45',
+    price: '3.00',
     image: '/images/delicia-gelada.webp',
   },
   {
@@ -18,7 +18,7 @@ const products = [
     format: 'Tacinha',
     capacity: '240ml',
     minQuantity: '12',
-    price: '1.45',
+    price: '2.90',
     image: '/images/mousse-manga.webp',
   },
   {
@@ -26,7 +26,7 @@ const products = [
     format: 'Tacinha',
     capacity: '240ml',
     minQuantity: '10',
-    price: '1.75',
+    price: '3.50',
     image: '/images/mousse-manga-taca-cheia.webp',
   },
   {
@@ -34,7 +34,7 @@ const products = [
     format: 'Tacinha',
     capacity: '240ml',
     minQuantity: '12',
-    price: '1.65',
+    price: '3.30',
     image: '/images/em-breve.webp',
   },
   {
@@ -42,7 +42,7 @@ const products = [
     format: 'Tacinha',
     capacity: '240ml',
     minQuantity: '10',
-    price: '1.98',
+    price: '3.96',
     image: '/images/em-breve.webp',
   },
   {
@@ -50,7 +50,7 @@ const products = [
     format: 'Bolo',
     capacity: '26x6,4cm',
     minQuantity: '1',
-    price: '25.00',
+    price: '33.00',
     image: '/images/strawberry-cheescake.webp',
   },
   {
@@ -58,7 +58,7 @@ const products = [
     format: 'Tacinha',
     capacity: '240ml',
     minQuantity: 'AD',
-    price: '1.40',
+    price: '3.00',
     image: '/images/cheesecake-morango-tacinha.webp',
   },
   {
@@ -66,7 +66,7 @@ const products = [
     format: 'Bolo',
     capacity: '24cm',
     minQuantity: '1',
-    price: '16.00',
+    price: '24.00',
     image: '/images/mocca-cake.webp',
   },
   {
@@ -74,7 +74,7 @@ const products = [
     format: 'Bolo',
     capacity: '28cm',
     minQuantity: '1',
-    price: '20.00',
+    price: '30.00',
     image: '/images/em-breve.webp',
   },
   {
@@ -82,7 +82,7 @@ const products = [
     format: 'Queque',
     capacity: '',
     minQuantity: '12',
-    price: '8.00',
+    price: '16.00',
     image: '/images/apple-raisin-queques.webp',
   },
   {
@@ -90,7 +90,7 @@ const products = [
     format: 'Tarte',
     capacity: '28cm',
     minQuantity: '1',
-    price: '22.50',
+    price: '33.75',
     image: '/images/em-breve.webp',
   },
 ];
@@ -100,7 +100,7 @@ const bonus = {
   format: 'Tarte',
   capacity: '30cm',
   minQuantity: '1',
-  price: '13.50',
+  price: '20.25',
   image: '/images/quiche-espinafres.webp',
 };
 
@@ -120,11 +120,11 @@ export default function PrecosPage() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const CORRECT_PASSWORD = 'clara'; // Change this to your desired password
+  const CORRECT_PASSWORD = 'lima'; // Change this to your desired password
 
   useEffect(() => {
     // Check if already authenticated in this session
-    const auth = sessionStorage.getItem('restaurantes_auth');
+    const auth = sessionStorage.getItem('publico_auth');
     if (auth === 'true') {
       setIsAuthenticated(true);
     }
@@ -134,7 +134,7 @@ export default function PrecosPage() {
     e.preventDefault();
     if (password === CORRECT_PASSWORD) {
       setIsAuthenticated(true);
-      sessionStorage.setItem('restaurantes_auth', 'true');
+      sessionStorage.setItem('publico_auth', 'true');
       setError('');
     } else {
       setError('Senha incorreta. Tente novamente.');
