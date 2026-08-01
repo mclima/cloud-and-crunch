@@ -58,7 +58,7 @@ const products = [
     format: 'Tacinha',
     capacity: '240ml',
     minQuantity: 'AD',
-    price: '1.45',
+    price: '1.50',
     image: '/images/cheesecake-morango-tacinha.webp',
   },
   {
@@ -66,7 +66,7 @@ const products = [
     format: 'Bolo',
     capacity: '24cm',
     minQuantity: '1',
-    price: '16.00',
+    price: '15.00',
     image: '/images/mocca-cake.webp',
   },
   {
