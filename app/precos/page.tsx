@@ -66,7 +66,7 @@ const products = [
     format: 'Bolo',
     capacity: '24cm',
     minQuantity: '1',
-    price: '15.00',
+    price: '16.00',
     image: '/images/mocca-cake.webp',
   },
   {
