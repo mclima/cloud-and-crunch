@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Metadata } from 'next';
 import Image from 'next/image';
 
@@ -103,6 +103,8 @@ export default function PrecosPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [showLeftArrow, setShowLeftArrow] = useState(false);
+  const tableContainerRef = useRef<HTMLDivElement>(null);
 
   const CORRECT_PASSWORD = 'lima'; // Change this to your desired password
 
@@ -113,6 +115,19 @@ export default function PrecosPage() {
       setIsAuthenticated(true);
     }
   }, []);
+
+  useEffect(() => {
+    if (!isAuthenticated || !tableContainerRef.current) return;
+
+    const handleScroll = () => {
+      if (tableContainerRef.current) {
+        setShowLeftArrow(tableContainerRef.current.scrollLeft > 10);
+      }
+    };
+
+    tableContainerRef.current.addEventListener('scroll', handleScroll);
+    return () => tableContainerRef.current?.removeEventListener('scroll', handleScroll);
+  }, [isAuthenticated]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -301,13 +316,11 @@ export default function PrecosPage() {
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden relative">
             {/* Scroll indicators for mobile */}
             <button 
-              onClick={(e) => {
-                const container = e.currentTarget.parentElement;
-                const table = container?.querySelector('.overflow-x-auto') as HTMLElement;
-                table?.scrollTo({ left: 0, behavior: 'smooth' });
+              onClick={() => {
+                tableContainerRef.current?.scrollTo({ left: 0, behavior: 'smooth' });
               }}
               id="scroll-left-embalagem"
-              className="absolute left-4 top-4 bg-white/90 rounded-full p-2 md:hidden z-10 shadow-md hover:bg-white active:scale-95 transition-all opacity-0 pointer-events-none"
+              className={`absolute left-4 top-4 bg-white/90 rounded-full p-2 md:hidden z-20 shadow-md hover:bg-white active:scale-95 transition-all ${showLeftArrow ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
               aria-label="Scroll table back to start"
             >
               <svg 
@@ -320,14 +333,9 @@ export default function PrecosPage() {
               </svg>
             </button>
             <button 
-              onClick={(e) => {
-                const container = e.currentTarget.parentElement;
-                const table = container?.querySelector('.overflow-x-auto') as HTMLElement;
-                const leftBtn = container?.querySelector('#scroll-left-embalagem') as HTMLElement;
-                table?.scrollTo({ left: table.scrollWidth, behavior: 'smooth' });
-                if (leftBtn) {
-                  leftBtn.classList.remove('opacity-0', 'pointer-events-none');
-                  leftBtn.classList.add('opacity-100');
+              onClick={() => {
+                if (tableContainerRef.current) {
+                  tableContainerRef.current.scrollTo({ left: tableContainerRef.current.scrollWidth, behavior: 'smooth' });
                 }
               }}
               className="absolute right-4 top-4 bg-white/90 rounded-full p-2 md:hidden z-10 shadow-md hover:bg-white active:scale-95 transition-transform"
@@ -342,11 +350,11 @@ export default function PrecosPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
-            <div className="overflow-x-auto">
+            <div ref={tableContainerRef} id="embalagem-table-scroll" className="overflow-x-auto">
               <table className="w-full">
                 <thead className="bg-[#3d2d22] text-white">
                   <tr>
-                    <th className="px-6 py-4 text-left text-sm font-semibold">
+                    <th className="px-6 py-4 text-left text-sm font-semibold sticky left-0 bg-[#3d2d22] z-10">
                       Item
                     </th>
                     <th className="px-6 py-4 text-left text-sm font-semibold">
@@ -366,7 +374,7 @@ export default function PrecosPage() {
                       key={index}
                       className="hover:bg-[#efe2d5] transition-colors duration-150"
                     >
-                      <td className="px-6 py-4 text-[#3d2d22] font-medium">
+                      <td className="px-6 py-4 text-[#3d2d22] font-medium sticky left-0 bg-white z-10">
                         {item.item}
                       </td>
                       <td className="px-6 py-4 text-stone-700">
