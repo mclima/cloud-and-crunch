@@ -372,9 +372,9 @@ export default function PrecosPage() {
                   {packaging.map((item, index) => (
                     <tr
                       key={index}
-                      className="hover:bg-[#efe2d5] transition-colors duration-150"
+                      className="group hover:bg-[#efe2d5] transition-colors duration-150"
                     >
-                      <td className="px-6 py-4 text-[#3d2d22] font-medium sticky left-0 bg-white z-10">
+                      <td className="px-6 py-4 text-[#3d2d22] font-medium sticky left-0 bg-white group-hover:bg-[#efe2d5] z-10 transition-colors duration-150">
                         {item.item}
                       </td>
                       <td className="px-6 py-4 text-stone-700">
