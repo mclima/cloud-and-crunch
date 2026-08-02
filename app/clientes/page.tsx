@@ -110,7 +110,7 @@ export default function PrecosPage() {
 
   useEffect(() => {
     // Check if already authenticated in this session
-    const auth = sessionStorage.getItem('publico_auth');
+    const auth = sessionStorage.getItem('clientes_auth');
     if (auth === 'true') {
       setIsAuthenticated(true);
     }
@@ -133,7 +133,7 @@ export default function PrecosPage() {
     e.preventDefault();
     if (password === CORRECT_PASSWORD) {
       setIsAuthenticated(true);
-      sessionStorage.setItem('publico_auth', 'true');
+      sessionStorage.setItem('clientes_auth', 'true');
       setError('');
     } else {
       setError('Senha incorreta. Tente novamente.');
