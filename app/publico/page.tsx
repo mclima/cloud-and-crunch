@@ -8,7 +8,7 @@ const products = [
   {
     name: 'Delícia',
     format: 'Tacinha',
-    capacity: '240ml',
+    capacity: '230ml',
     minQuantity: 'Não Aplicável',
     price: '3.00',
     image: '/images/delicia-gelada.webp',
@@ -16,7 +16,7 @@ const products = [
   {
     name: 'Mousse Manga',
     format: 'Tacinha',
-    capacity: '240ml',
+    capacity: '230ml',
     minQuantity: '13',
     price: '2.50',
     image: '/images/mousse-manga-taca-cheia.webp',
@@ -24,7 +24,7 @@ const products = [
   {
     name: 'Mousse Maracujá com sementes',
     format: 'Tacinha',
-    capacity: '240ml',
+    capacity: '230ml',
     minQuantity: '10',
     price: '3.50',
     image: '/images/em-breve.webp',
@@ -32,7 +32,7 @@ const products = [
   {
     name: 'Strawberry Cheesecake Tacinha',
     format: 'Tacinha',
-    capacity: '240ml',
+    capacity: '230ml',
     minQuantity: 'AD',
     price: 'AD',
     image: '/images/cheesecake-morango-tacinha.webp',
@@ -89,7 +89,7 @@ const bonus = {
 };
 
 const packaging = [
-  { item: 'Tacinha', capacity: '240ml', cardboard: '0.20', plastic: '0.16' },
+  { item: 'Tacinha', capacity: '230ml', cardboard: '0.20', plastic: '0.16' },
   { item: 'Prato deslizante', capacity: '28cm', cardboard: '0.86', plastic: '' },
   { item: 'Prato com Naperon', capacity: '32cm', cardboard: '0.65', plastic: '' },
   { item: 'Caixa', capacity: '30x30x8,5cm', cardboard: '1.10', plastic: '' },
@@ -201,6 +201,8 @@ export default function PrecosPage() {
                     src={product.image}
                     alt={product.name}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    priority={index < 3}
                     className="object-cover"
                   />
                 </div>
@@ -252,6 +254,7 @@ export default function PrecosPage() {
                   src={bonus.image}
                   alt={bonus.name}
                   fill
+                  sizes="(max-width: 768px) 100vw, 448px"
                   className="object-cover"
                 />
               </div>
