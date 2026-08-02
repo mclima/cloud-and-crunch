@@ -17,8 +17,8 @@ const products = [
     name: 'Mousse Manga',
     format: 'Tacinha',
     capacity: '240ml',
-    minQuantity: '10',
-    price: '1.30',
+    minQuantity: '13',
+    price: '1.25',
     image: '/images/mousse-manga-taca-cheia.webp',
   },
   {
