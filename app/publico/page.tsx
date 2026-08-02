@@ -30,6 +30,14 @@ const products = [
     image: '/images/em-breve.webp',
   },
   {
+    name: 'Strawberry Cheesecake Tacinha',
+    format: 'Tacinha',
+    capacity: '240ml',
+    minQuantity: 'AD',
+    price: 'AD',
+    image: '/images/cheesecake-morango-tacinha.webp',
+  },
+  {
     name: 'Strawberry Cheesecake',
     format: 'Bolo',
     capacity: '26x6,4cm',
@@ -37,13 +45,13 @@ const products = [
     price: '35.00',
     image: '/images/strawberry-cheescake.webp',
   },
-  {
-    name: 'Strawberry Cheesecake Tacinha',
-    format: 'Tacinha',
-    capacity: '240ml',
-    minQuantity: 'AD',
-    price: 'AD',
-    image: '/images/cheesecake-morango-tacinha.webp',
+   {
+    name: 'Tarte Maracujá com sementes',
+    format: 'Tarte',
+    capacity: '28cm',
+    minQuantity: '1',
+    price: '29.00',
+    image: '/images/em-breve.webp',
   },
   {
     name: 'Bolo Mocca',
@@ -68,14 +76,6 @@ const products = [
     minQuantity: '12',
     price: '16.00',
     image: '/images/apple-raisin-queques.webp',
-  },
-  {
-    name: 'Tarte Maracujá com sementes',
-    format: 'Tarte',
-    capacity: '28cm',
-    minQuantity: '1',
-    price: '29.00',
-    image: '/images/em-breve.webp',
   },
 ];
 
