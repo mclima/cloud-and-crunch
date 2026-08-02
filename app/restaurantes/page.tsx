@@ -46,12 +46,12 @@ const products = [
     image: '/images/cheesecake-morango-tacinha.webp',
   },
   {
-    name: 'Bolo Mocca',
-    format: 'Bolo',
-    capacity: '24cm',
-    minQuantity: '1',
-    price: '15.00',
-    image: '/images/mocca-cake.webp',
+    // name: 'Bolo Mocca',
+    // format: 'Bolo',
+    // capacity: '24cm',
+    // minQuantity: '1',
+    // price: '15.00',
+    // image: '/images/mocca-cake.webp',
   },
   {
     name: 'Bolo Mocca',
