@@ -42,7 +42,7 @@ const products = [
   {
     name: 'Mousse de Manga',
     description: 'Uma mousse leve e refrescante feita com mangas maduras e suculentas. Textura aveludada que proporciona uma experiência tropical irresistível.',
-    image: '/images/mousse-manga.webp',
+    image: '/images/mousse-manga-taca-cheia.webp',
     category: 'Sobremesas',
   },
   {
