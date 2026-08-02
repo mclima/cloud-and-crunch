@@ -70,11 +70,11 @@ const products = [
     image: '/images/apple-raisin-queques.webp',
   },
   {
-    name: 'Tarte Maracujá Sem Sementes',
+    name: 'Tarte Maracujá com sementes',
     format: 'Tarte',
     capacity: '28cm',
     minQuantity: '1',
-    price: '21.00',
+    price: '19.00',
     image: '/images/em-breve.webp',
   },
 ];
