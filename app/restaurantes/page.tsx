@@ -53,14 +53,14 @@ const products = [
     price: '19.00',
     image: '/images/em-breve.webp',
   },
-  //{
-    // name: 'Bolo Mocca',
-    // format: 'Bolo',
-    // capacity: '24cm',
-    // minQuantity: '1',
-    // price: '15.00',
-    // image: '/images/mocca-cake.webp',
- // },
+  {
+    name: 'Bolo Mocca',
+    format: 'Bolo',
+    capacity: '24cm',
+    minQuantity: '1',
+    price: '16.00',
+    image: '/images/mocca-cake.webp',
+  },
   {
     name: 'Bolo Mocca',
     format: 'Bolo',
