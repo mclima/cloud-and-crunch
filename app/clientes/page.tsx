@@ -67,7 +67,7 @@ const products = [
     capacity: '28cm',
     minQuantity: '1',
     price: '30.00',
-    image: '/images/em-breve.webp',
+    image: '/images/bolo-mocca-20.webp',
   },
   {
     name: 'Queques Maçã + Passas',
@@ -218,7 +218,8 @@ export default function PrecosPage() {
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     priority={index < 3}
-                    className="object-cover"
+                    {...(product.image === '/images/em-breve.webp' ? { loading: 'eager' as const } : {})}
+                    className={product.image === '/images/bolo-mocca-20.webp' ? 'object-cover [object-position:center] md:[object-position:center_-150px]' : 'object-cover'}
                   />
                 </div>
                 <div className="p-6">
