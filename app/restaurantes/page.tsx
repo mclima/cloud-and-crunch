@@ -10,7 +10,7 @@ const products = [
     format: 'Tacinha',
     capacity: '230ml',
     minQuantity: 'Não Aplicável',
-    price: '1.50',
+    price: '1.45',
     image: '/images/delicia-gelada.webp',
   },
   {
