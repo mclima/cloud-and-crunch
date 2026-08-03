@@ -84,7 +84,7 @@ const bonus = {
   format: 'Tarte',
   capacity: '30cm',
   minQuantity: '1',
-  price: '21.00',
+  price: '20.50',
   image: '/images/quiche-espinafres.webp',
 };
 
