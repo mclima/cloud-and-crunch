@@ -33,7 +33,7 @@ const products = [
     name: 'Strawberry Cheesecake Tacinha',
     format: 'Tacinha',
     capacity: '230ml',
-    minQuantity: 'AD',
+    minQuantity: 'Não Aplicável',
     price: '3.00',
     image: '/images/cheesecake-morango-tacinha.webp',
   },
