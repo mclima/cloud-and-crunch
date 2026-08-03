@@ -34,7 +34,7 @@ const products = [
     format: 'Tacinha',
     capacity: '230ml',
     minQuantity: 'AD',
-    price: 'AD',
+    price: '1.40',
     image: '/images/cheesecake-morango-tacinha.webp',
   },
   {
