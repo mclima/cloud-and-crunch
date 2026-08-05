@@ -82,7 +82,7 @@ const products = [
     format: 'Rolo',
     capacity: 'AD',
     minQuantity: '1',
-    price: '23.00',
+    price: '21.10',
     image: '/images/em-breve.webp',
   },
 ];
