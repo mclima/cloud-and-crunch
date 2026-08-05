@@ -33,7 +33,7 @@ const products = [
     name: 'Strawberry Cheesecake Tacinha',
     format: 'Tacinha',
     capacity: '230ml',
-    minQuantity: 'Não Aplicável',
+    minQuantity: 'AD',
     price: '1.50',
     image: '/images/cheesecake-morango-tacinha.webp',
   },
@@ -76,6 +76,14 @@ const products = [
     minQuantity: '12',
     price: '8.00',
     image: '/images/apple-raisin-queques.webp',
+  },
+  {
+    name: 'Salame de Chocolate',
+    format: 'Rolo',
+    capacity: 'AD',
+    minQuantity: '1',
+    price: '15.00',
+    image: '/images/em-breve.webp',
   },
 ];
 

@@ -51,6 +51,12 @@ const products = [
     image: '/images/quiche-espinafres.webp',
     category: 'Bonus',
   },
+  {
+    name: 'Salame de Chocolate',
+    description: 'Um clássico português irresistível, feito com chocolate rico e bolachas crocantes. Perfeito para partilhar ou saborear sozinho.',
+    image: '/images/em-breve.webp',
+    category: 'Sobremesas',
+  },
 ]
 
 export default function Products() {
@@ -70,7 +76,7 @@ export default function Products() {
       subtitle: 'Cada sobremesa é cuidadosamente preparada com ingredientes selecionados para garantir qualidade e sabor excecional.',
     },
     Bonus: {
-      title: 'Bonus',
+      title: 'Bónus',
       subtitle: 'Delícias especiais que complementam a nossa oferta.',
     },
   }

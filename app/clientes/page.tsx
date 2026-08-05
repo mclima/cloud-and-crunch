@@ -33,7 +33,7 @@ const products = [
     name: 'Strawberry Cheesecake Tacinha',
     format: 'Tacinha',
     capacity: '230ml',
-    minQuantity: 'Não Aplicável',
+    minQuantity: 'AD',
     price: '3.00',
     image: '/images/cheesecake-morango-tacinha.webp',
   },
@@ -58,7 +58,7 @@ const products = [
     format: 'Bolo',
     capacity: '24cm',
     minQuantity: '1',
-    price: '24.00',
+    price: '23.50',
     image: '/images/mocca-cake.webp',
   },
   {
@@ -66,7 +66,7 @@ const products = [
     format: 'Bolo',
     capacity: '28cm',
     minQuantity: '1',
-    price: '30.00',
+    price: '29.75',
     image: '/images/bolo-mocca-20.webp',
   },
   {
@@ -76,6 +76,14 @@ const products = [
     minQuantity: '12',
     price: '16.00',
     image: '/images/apple-raisin-queques.webp',
+  },
+  {
+    name: 'Salame de Chocolate',
+    format: 'Rolo',
+    capacity: 'AD',
+    minQuantity: '1',
+    price: '23.00',
+    image: '/images/em-breve.webp',
   },
 ];
 
