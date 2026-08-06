@@ -29,14 +29,14 @@ const products = [
     price: '1.75',
     image: '/images/em-breve.webp',
   },
-  {
-    name: 'Strawberry Cheesecake Tacinha',
-    format: 'Tacinha',
-    capacity: '230ml',
-    minQuantity: 'AD',
-    price: '1.50',
-    image: '/images/cheesecake-morango-tacinha.webp',
-  },
+  // {
+  //   name: 'Strawberry Cheesecake Tacinha',
+  //   format: 'Tacinha',
+  //   capacity: '230ml',
+  //   minQuantity: 'AD',
+  //   price: '1.50',
+  //   image: '/images/cheesecake-morango-tacinha.webp',
+  // },
   {
     name: 'Strawberry Cheesecake',
     format: 'Bolo',

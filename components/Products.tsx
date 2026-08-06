@@ -21,11 +21,11 @@ const products = [
     image: '/images/strawberry-cheescake.webp',
     category: 'Sobremesas',
   },
-  {
-    name: 'Cheesecake de Morango Tacinha',
-    description: 'A mesma delícia cremosa do nosso cheesecake de morango, agora em formato individual. Perfeito para uma porção pessoal de indulgência.',
-    image: '/images/cheesecake-morango-tacinha.webp',
-    category: 'Sobremesas',
+  // {
+  //   name: 'Cheesecake de Morango Tacinha',
+  //   description: 'A mesma delícia cremosa do nosso cheesecake de morango, agora em formato individual. Perfeito para uma porção pessoal de indulgência.',
+  //   image: '/images/cheesecake-morango-tacinha.webp',
+  //   category: 'Sobremesas',
   },
   {
     name: 'Queques de Maçã e Passas',
@@ -160,7 +160,7 @@ export default function Products() {
                       height={600}
                       className={`h-full w-full transition-transform duration-500 group-hover:scale-110 ${
                         product.image === '/images/salame-chocolate.webp' 
-                          ? 'object-contain object-center' 
+                          ? 'object-contain object-top' 
                           : 'object-cover object-center'
                       }`}
                     />
