@@ -26,7 +26,7 @@ const products = [
   //   description: 'A mesma delícia cremosa do nosso cheesecake de morango, agora em formato individual. Perfeito para uma porção pessoal de indulgência.',
   //   image: '/images/cheesecake-morango-tacinha.webp',
   //   category: 'Sobremesas',
-  },
+  // },
   {
     name: 'Queques de Maçã e Passas',
     description: 'Queques artesanais macios e aromáticos, repletos de maçã fresca e passas suculentas. Ideais para acompanhar um café ou chá.',
