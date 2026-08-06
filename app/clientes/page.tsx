@@ -14,7 +14,7 @@ const products = [
     image: '/images/delicia-gelada.webp',
   },
   {
-    name: 'Mousse Manga',
+    name: 'Mousse de Manga',
     format: 'Tacinha',
     capacity: '230ml',
     minQuantity: '13',
@@ -22,7 +22,7 @@ const products = [
     image: '/images/mousse-manga-taca-cheia.webp',
   },
   {
-    name: 'Mousse Maracujá com sementes',
+    name: 'Mousse de Maracujá com sementes',
     format: 'Tacinha',
     capacity: '230ml',
     minQuantity: '10',
@@ -30,10 +30,10 @@ const products = [
     image: '/images/mousse-maracuja.webp',
   },
   {
-    name: 'Mousse de Morango',
+    name: 'Mousse deMorango',
     format: 'Tacinha',
     capacity: '230ml',
-    minQuantity: 'AD',
+    minQuantity: '14',
     price: '3.50',
     image: '/images/mousse-morango.webp',
   },
