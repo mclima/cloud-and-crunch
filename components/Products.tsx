@@ -16,21 +16,33 @@ const products = [
     category: 'Sobremesas',
   },
   {
+    name: 'Mousse de Morango',
+    description: 'Uma mousse leve e cremosa com sabor intenso a morango. Textura aveludada que proporciona uma experiência doce e refrescante.',
+    image: '/images/mousse-morango.webp',
+    category: 'Sobremesas',
+  },
+  {
+    name: 'Mousse Maracujá com sementes',
+    description: 'Uma mousse leve e refrescante com o sabor tropical do maracujá e sementes crocantes. Textura aveludada que proporciona uma experiência única e irresistível.',
+    image: '/images/mousse-maracuja.webp',
+    category: 'Sobremesas',
+  },
+   {
+    name: 'Mousse de Manga',
+    description: 'Uma mousse leve e refrescante feita com mangas maduras e suculentas. Textura aveludada que proporciona uma experiência tropical irresistível.',
+    image: '/images/mousse-manga-taca-cheia.webp',
+    category: 'Sobremesas',
+  },
+  {
+    name: 'Salame de Chocolate',
+    description: 'Um clássico português irresistível, feito com chocolate rico e bolachas crocantes. Perfeito para partilhar ou saborear sozinho.',
+    image: '/images/salame-chocolate-1.webp',
+    category: 'Sobremesas',
+  },
+  {
     name: 'Cheesecake de Morango',
     description: 'Um cheesecake cremoso com uma camada generosa de morangos frescos. Uma sobremesa clássica feita com ingredientes de qualidade premium.',
     image: '/images/strawberry-cheescake.webp',
-    category: 'Sobremesas',
-  },
-  // {
-  //   name: 'Cheesecake de Morango Tacinha',
-  //   description: 'A mesma delícia cremosa do nosso cheesecake de morango, agora em formato individual. Perfeito para uma porção pessoal de indulgência.',
-  //   image: '/images/cheesecake-morango-tacinha.webp',
-  //   category: 'Sobremesas',
-  // },
-  {
-    name: 'Queques de Maçã e Passas',
-    description: 'Queques artesanais macios e aromáticos, repletos de maçã fresca e passas suculentas. Ideais para acompanhar um café ou chá.',
-    image: '/images/apple-raisin-queques.webp',
     category: 'Sobremesas',
   },
   {
@@ -40,9 +52,9 @@ const products = [
     category: 'Sobremesas',
   },
   {
-    name: 'Mousse de Manga',
-    description: 'Uma mousse leve e refrescante feita com mangas maduras e suculentas. Textura aveludada que proporciona uma experiência tropical irresistível.',
-    image: '/images/mousse-manga-taca-cheia.webp',
+    name: 'Queques de Maçã e Passas',
+    description: 'Queques artesanais macios e aromáticos, repletos de maçã fresca e passas suculentas. Ideais para acompanhar um café ou chá.',
+    image: '/images/apple-raisin-queques.webp',
     category: 'Sobremesas',
   },
   {
@@ -51,12 +63,7 @@ const products = [
     image: '/images/quiche-espinafres.webp',
     category: 'Bonus',
   },
-  {
-    name: 'Salame de Chocolate',
-    description: 'Um clássico português irresistível, feito com chocolate rico e bolachas crocantes. Perfeito para partilhar ou saborear sozinho.',
-    image: '/images/salame-chocolate.webp',
-    category: 'Sobremesas',
-  },
+  
 ]
 
 export default function Products() {
@@ -158,10 +165,7 @@ export default function Products() {
                       alt={product.name}
                       width={600}
                       height={600}
-                      className={`h-full w-full transition-transform duration-500 group-hover:scale-110 ${
-                        product.image === '/images/salame-chocolate.webp' 
-                          ? 'object-contain object-top' 
-                          : 'object-cover object-center'
+                      className={`h-full w-full transition-transform duration-500 group-hover:scale-110 object-cover object-center'
                       }`}
                     />
                   </div>

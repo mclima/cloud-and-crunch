@@ -27,18 +27,18 @@ const products = [
     capacity: '230ml',
     minQuantity: '10',
     price: '3.50',
-    image: '/images/em-breve.webp',
+    image: '/images/mousse-maracuja.webp',
   },
-  // {
-  //   name: 'Strawberry Cheesecake Tacinha',
-  //   format: 'Tacinha',
-  //   capacity: '230ml',
-  //   minQuantity: 'AD',
-  //   price: '3.00',
-  //   image: '/images/cheesecake-morango-tacinha.webp',
-  // },
   {
-    name: 'Strawberry Cheesecake',
+    name: 'Mousse de Morango',
+    format: 'Tacinha',
+    capacity: '230ml',
+    minQuantity: 'AD',
+    price: '3.50',
+    image: '/images/mousse-morango.webp',
+  },
+  {
+    name: 'Cheesecake de Morango',
     format: 'Bolo',
     capacity: '26x6,4cm',
     minQuantity: '1',
@@ -83,7 +83,7 @@ const products = [
     capacity: 'AD',
     minQuantity: '1',
     price: '22.00',
-    image: '/images/salame-chocolate.webp',
+    image: '/images/salame-chocolate-1.webp',
   },
 ];
 
