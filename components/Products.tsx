@@ -54,7 +54,7 @@ const products = [
   {
     name: 'Salame de Chocolate',
     description: 'Um clássico português irresistível, feito com chocolate rico e bolachas crocantes. Perfeito para partilhar ou saborear sozinho.',
-    image: '/images/em-breve.webp',
+    image: '/images/salame-chocolate.webp',
     category: 'Sobremesas',
   },
 ]
@@ -158,7 +158,11 @@ export default function Products() {
                       alt={product.name}
                       width={600}
                       height={600}
-                      className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
+                      className={`h-full w-full transition-transform duration-500 group-hover:scale-110 ${
+                        product.image === '/images/salame-chocolate.webp' 
+                          ? 'object-contain object-center' 
+                          : 'object-cover object-center'
+                      }`}
                     />
                   </div>
 

@@ -82,8 +82,8 @@ const products = [
     format: 'Rolo',
     capacity: 'AD',
     minQuantity: '1',
-    price: '21.10',
-    image: '/images/em-breve.webp',
+    price: '22.00',
+    image: '/images/salame-chocolate.webp',
   },
 ];
 
