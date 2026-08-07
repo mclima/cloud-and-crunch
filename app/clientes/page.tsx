@@ -85,6 +85,22 @@ const products = [
     price: '22.00',
     image: '/images/salame-chocolate-1.webp',
   },
+  {
+    name: 'Bolo de Chocolate Branco',
+    format: 'Bolo',
+    capacity: '24"',
+    minQuantity: '1',
+    price: 'AD',
+    image: '/images/bolo-chocolate-branco.webp',
+  },
+  {
+    name: 'Bolo Joana',
+    format: 'Bolo',
+    capacity: '24"',
+    minQuantity: '1',
+    price: 'AD',
+    image: '/images/bolo-chocolate-preto.webp',
+  },
 ];
 
 const bonus = {

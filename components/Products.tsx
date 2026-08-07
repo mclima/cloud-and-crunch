@@ -52,16 +52,28 @@ const products = [
     category: 'Sobremesas',
   },
   {
-    name: 'Queques de Maçã e Passas',
-    description: 'Queques artesanais macios e aromáticos, repletos de maçã fresca e passas suculentas. Ideais para acompanhar um café ou chá.',
-    image: '/images/apple-raisin-queques.webp',
-    category: 'Sobremesas',
-  },
-  {
     name: 'Quiche de Espinafres',
     description: 'Uma quiche artesanal com espinafres frescos e queijo cremoso. Perfeita para um lanche saboroso ou refeição ligeira.',
     image: '/images/quiche-espinafres.webp',
     category: 'Bonus',
+  },
+  {
+    name: 'Bolo Sárya',
+    description: 'Um bolo delicioso e cremoso de chocolate branco. Textura suave e sabor irresistível que derrete na boca.',
+    image: '/images/bolo-chocolate-branco.webp',
+    category: 'Sobremesas',
+  },
+  {
+    name: 'Bolo Joana',
+    description: 'Um bolo de chocolate intenso coberto com ganache de chocolate rico e aveludado. Uma experiência irresistível para os verdadeiros amantes de chocolate.',
+    image: '/images/bolo-chocolate-preto.webp',
+    category: 'Sobremesas',
+  },
+  {
+    name: 'Queques de Maçã e Passas',
+    description: 'Queques artesanais macios e aromáticos, repletos de maçã fresca e passas suculentas. Ideais para acompanhar um café ou chá.',
+    image: '/images/apple-raisin-queques.webp',
+    category: 'Sobremesas',
   },
   
 ]
@@ -165,7 +177,10 @@ export default function Products() {
                       alt={product.name}
                       width={600}
                       height={600}
-                      className={`h-full w-full transition-transform duration-500 group-hover:scale-110 object-cover object-center'
+                      className={`h-full w-full transition-transform duration-500 group-hover:scale-110 object-cover ${
+                        product.image === '/images/bolo-chocolate-preto.webp' 
+                          ? 'object-[70%_center]' 
+                          : 'object-center'
                       }`}
                     />
                   </div>
