@@ -17,12 +17,12 @@ const products = [
     name: 'Mousse de Manga',
     format: 'Tacinha',
     capacity: '230ml',
-    minQuantity: '13',
+    minQuantity: '15',
     price: '2.50',
     image: '/images/mousse-manga-taca-cheia.webp',
   },
   {
-    name: 'Mousse de Maracujá com sementes',
+    name: 'Mousse de Maracujá com ou sem sementes',
     format: 'Tacinha',
     capacity: '230ml',
     minQuantity: '10',
@@ -30,7 +30,7 @@ const products = [
     image: '/images/mousse-maracuja.webp',
   },
   {
-    name: 'Mousse deMorango',
+    name: 'Mousse de Morango',
     format: 'Tacinha',
     capacity: '230ml',
     minQuantity: '14',
@@ -46,7 +46,7 @@ const products = [
     image: '/images/strawberry-cheescake.webp',
   },
    {
-    name: 'Tarte Maracujá com sementes',
+    name: 'Tarte Maracujá com ou sem sementes',
     format: 'Tarte',
     capacity: '28cm',
     minQuantity: '1',

@@ -22,7 +22,7 @@ const products = [
     category: 'Sobremesas',
   },
   {
-    name: 'Mousse de Maracujá com sementes',
+    name: 'Mousse de Maracujá com ou sem sementes',
     description: 'Uma mousse leve e refrescante com o sabor tropical do maracujá e sementes crocantes. Textura aveludada que proporciona uma experiência única e irresistível.',
     image: '/images/mousse-maracuja.webp',
     category: 'Sobremesas',
