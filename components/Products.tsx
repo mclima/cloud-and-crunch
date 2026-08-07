@@ -58,7 +58,7 @@ const products = [
     category: 'Bonus',
   },
   {
-    name: 'Bolo Sárya',
+    name: 'Bolo Sária',
     description: 'Um bolo delicioso e cremoso de chocolate branco. Textura suave e sabor irresistível que derrete na boca.',
     image: '/images/bolo-chocolate-branco.webp',
     category: 'Sobremesas',

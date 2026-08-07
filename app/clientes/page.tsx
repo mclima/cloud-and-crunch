@@ -86,7 +86,7 @@ const products = [
     image: '/images/salame-chocolate-1.webp',
   },
   {
-    name: 'Bolo de Chocolate Branco',
+    name: 'Bolo Sária',
     format: 'Bolo',
     capacity: '24"',
     minQuantity: '1',
