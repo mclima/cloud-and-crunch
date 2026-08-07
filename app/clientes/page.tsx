@@ -94,7 +94,7 @@ const products = [
     image: '/images/bolo-chocolate-branco.webp',
   },
   {
-    name: 'Bolo Joana',
+    name: 'Bolo Isabel',
     format: 'Bolo',
     capacity: '24"',
     minQuantity: '1',

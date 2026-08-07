@@ -64,7 +64,7 @@ const products = [
     category: 'Sobremesas',
   },
   {
-    name: 'Bolo Joana',
+    name: 'Bolo Isabel',
     description: 'Um bolo de chocolate intenso coberto com ganache de chocolate rico e aveludado. Uma experiência irresistível para os verdadeiros amantes de chocolate.',
     image: '/images/bolo-chocolate-preto.webp',
     category: 'Sobremesas',
