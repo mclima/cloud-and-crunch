@@ -90,7 +90,8 @@ const products = [
     format: 'Bolo',
     capacity: '24"',
     minQuantity: '1',
-    price: 'AD',
+    price: '45.00',
+    priceNote: '+ ± €5.00 recheio | + ± €12.00 topping (pepitas + fruta)',
     image: '/images/bolo-chocolate-branco.webp',
   },
   {
@@ -98,7 +99,8 @@ const products = [
     format: 'Bolo',
     capacity: '24"',
     minQuantity: '1',
-    price: 'AD',
+    price: '28.00',
+    priceNote: '+ ± €9.00 custo de fruta',
     image: '/images/bolo-chocolate-preto.webp',
   },
 ];
@@ -275,6 +277,11 @@ export default function PrecosPage() {
                         €{product.price}
                       </span>
                     </div>
+                    {product.priceNote && (
+                      <p className="text-xs text-stone-500 mt-2 text-right">
+                        {product.priceNote}
+                      </p>
+                    )}
                   </div>
                 </div>
               </div>

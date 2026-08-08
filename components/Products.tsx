@@ -53,13 +53,13 @@ const products = [
   },
   {
     name: 'Quiche de Espinafres',
-    description: 'Uma quiche artesanal com espinafres frescos e queijo cremoso. Perfeita para um lanche saboroso ou refeição ligeira.',
+    description: 'Uma quiche artesanal com espinafres frescos e queijo cremoso. Perfeita para um lanche saboroso ou refeição ligeira. Podemos adicionar bacon, presunto, etc. a um custo adicional.',
     image: '/images/quiche-espinafres.webp',
     category: 'Bonus',
   },
   {
     name: 'Bolo Sária',
-    description: 'Um bolo delicioso e cremoso de chocolate branco. Textura suave e sabor irresistível que derrete na boca.',
+    description: 'Um bolo delicioso e cremoso de chocolate branco com recheio de fruta e chantilly. Textura suave e sabor irresistível que derrete na boca.',
     image: '/images/bolo-chocolate-branco.webp',
     category: 'Sobremesas',
   },
