@@ -1,0 +1,10 @@
+# Allow all crawlers by default
+User-agent: *
+Allow: /
+
+# Disallow password-protected pricing pages
+Disallow: /clientes
+Disallow: /restaurantes
+
+# Sitemap location (update with your actual sitemap URL if you have one)
+# Sitemap: https://yourdomain.com/sitemap.xml

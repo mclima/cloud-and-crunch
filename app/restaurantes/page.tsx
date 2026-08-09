@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import { Metadata } from 'next';
 import Image from 'next/image';
+import Script from 'next/script';
 
 const products = [
   {
@@ -169,6 +169,21 @@ export default function PrecosPage() {
 
   if (!isAuthenticated) {
     return (
+      <>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-GGKKZ04FY3"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics-restaurantes" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-GGKKZ04FY3', {
+              page_path: '/restaurantes'
+            });
+          `}
+        </Script>
       <div className="min-h-screen bg-[#faf6f2] flex items-center justify-center px-4">
         <div className="bg-white rounded-2xl shadow-lg p-8 w-full max-w-md border border-stone-200">
           <h1 className="text-3xl font-bold text-[#3d2d22] mb-2 text-center">
@@ -207,10 +222,26 @@ export default function PrecosPage() {
           </form>
         </div>
       </div>
+      </>
     );
   }
 
   return (
+    <>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-GGKKZ04FY3"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics-restaurantes" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-GGKKZ04FY3', {
+            page_path: '/restaurantes'
+          });
+        `}
+      </Script>
     <div className="min-h-screen bg-[#faf6f2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header */}
@@ -435,5 +466,6 @@ export default function PrecosPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }
