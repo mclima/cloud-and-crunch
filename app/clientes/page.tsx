@@ -95,7 +95,7 @@ const products = [
     image: '/images/bolo-chocolate-branco.webp',
   },
   {
-    name: 'Bolo Isabel',
+    name: 'Bolo de Chocolate',
     format: 'Bolo',
     capacity: '24"',
     minQuantity: '1',
