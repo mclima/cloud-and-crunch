@@ -99,7 +99,7 @@ const products = [
     format: 'Bolo',
     capacity: '24"',
     minQuantity: '1',
-    price: '28.00',
+    price: '29.75',
     priceNote: '+ ± €9.00 custo de fruta',
     image: '/images/bolo-chocolate-preto.webp',
   },
