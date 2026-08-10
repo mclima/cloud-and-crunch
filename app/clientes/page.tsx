@@ -90,7 +90,7 @@ const products = [
     format: 'Bolo',
     capacity: '24"',
     minQuantity: '1',
-    price: '40.00',
+    price: '32.00',
     priceNote: '+ ± €5.00 recheio | + ± €12.00 topping (pepitas + fruta)',
     image: '/images/bolo-chocolate-branco.webp',
   },
