@@ -130,6 +130,7 @@ export default function PrecosPage() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [showLeftArrow, setShowLeftArrow] = useState(false);
+  const [showRightArrow, setShowRightArrow] = useState(true);
   const tableContainerRef = useRef<HTMLDivElement>(null);
 
   const CORRECT_PASSWORD = 'clara'; // Change this to your desired password
@@ -145,14 +146,21 @@ export default function PrecosPage() {
   useEffect(() => {
     if (!isAuthenticated || !tableContainerRef.current) return;
 
+    const element = tableContainerRef.current;
+    
     const handleScroll = () => {
-      if (tableContainerRef.current) {
-        setShowLeftArrow(tableContainerRef.current.scrollLeft > 10);
+      if (element) {
+        const { scrollLeft, scrollWidth, clientWidth } = element;
+        setShowLeftArrow(scrollLeft > 10);
+        setShowRightArrow(scrollLeft < scrollWidth - clientWidth - 10);
       }
     };
 
-    tableContainerRef.current.addEventListener('scroll', handleScroll);
-    return () => tableContainerRef.current?.removeEventListener('scroll', handleScroll);
+    // Initial check
+    handleScroll();
+
+    element.addEventListener('scroll', handleScroll);
+    return () => element.removeEventListener('scroll', handleScroll);
   }, [isAuthenticated]);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -383,11 +391,11 @@ export default function PrecosPage() {
                 tableContainerRef.current?.scrollTo({ left: 0, behavior: 'smooth' });
               }}
               id="scroll-left-embalagem"
-              className={`absolute left-4 top-4 bg-white/90 rounded-full p-2 md:hidden z-20 shadow-md hover:bg-white active:scale-95 transition-all ${showLeftArrow ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+              className={`absolute left-4 top-[75px] bg-cyan-500 rounded-full p-2 md:hidden z-20 shadow-md hover:bg-cyan-600 active:scale-95 transition-all ${showLeftArrow ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
               aria-label="Scroll table back to start"
             >
               <svg 
-                className="w-5 h-5 text-[#8b5a2b]" 
+                className="w-5 h-5 text-white" 
                 fill="none" 
                 stroke="currentColor" 
                 viewBox="0 0 24 24"
@@ -401,11 +409,11 @@ export default function PrecosPage() {
                   tableContainerRef.current.scrollTo({ left: tableContainerRef.current.scrollWidth, behavior: 'smooth' });
                 }
               }}
-              className="absolute right-4 top-4 bg-white/90 rounded-full p-2 md:hidden z-10 shadow-md hover:bg-white active:scale-95 transition-transform"
+              className={`absolute right-4 top-[75px] bg-cyan-500 rounded-full p-2 md:hidden z-10 shadow-md hover:bg-cyan-600 active:scale-95 transition-transform ${showRightArrow ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
               aria-label="Scroll table to see more columns"
             >
               <svg 
-                className="w-5 h-5 text-[#8b5a2b] animate-pulse" 
+                className="w-5 h-5 text-white animate-pulse" 
                 fill="none" 
                 stroke="currentColor" 
                 viewBox="0 0 24 24"
@@ -432,6 +440,10 @@ export default function PrecosPage() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
+                  {/* Empty row for arrow overlay - only visible on mobile */}
+                  <tr className="md:hidden">
+                    <td colSpan={4} className="h-12 bg-gradient-to-r from-cyan-50 to-blue-50"></td>
+                  </tr>
                   {packaging.map((item, index) => (
                     <tr
                       key={index}
