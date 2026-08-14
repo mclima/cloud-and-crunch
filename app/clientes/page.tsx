@@ -292,7 +292,7 @@ export default function PrecosPage() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     priority={index < 3}
                     {...(product.image === '/images/em-breve.webp' ? { loading: 'eager' as const } : {})}
-                    className={product.image === '/images/bolo-mocca-20.webp' ? 'object-cover [object-position:center] md:[object-position:center_-150px]' : 'object-cover'}
+                    className={product.image === '/images/bolo-mocca-20.webp' ? 'object-cover [object-position:center] md:[object-position:center_-150px]' : product.image === '/images/bolo-mocca-8.webp' ? 'object-cover object-[center_63%]' : 'object-cover'}
                   />
                 </div>
                 <div className="p-6">
