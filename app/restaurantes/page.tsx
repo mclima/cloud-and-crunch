@@ -56,6 +56,14 @@ const products = [
   {
     name: 'Bolo Mocca',
     format: 'Bolo',
+    capacity: '16cm',
+    minQuantity: '1',
+    price: '8.00',
+    image: '/images/bolo-mocca-8.webp',
+  },
+  {
+    name: 'Bolo Mocca',
+    format: 'Bolo',
     capacity: '24cm',
     minQuantity: '1',
     price: '16.00',
