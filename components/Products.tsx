@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 const products = [
   {
-    name: 'Delicia',
+    name: 'Delícia',
     description: 'Uma sobremesa semi-fria artesanal que combina uma textura incrivelmente cremosa com um toque crocante. Perfeita para quem procura uma experiência refrescante e única.',
     image: '/images/delicia-gelada.webp',
     category: 'Sobremesas',
@@ -91,7 +91,7 @@ export default function Products() {
 
   const categoryInfo: Record<string, { title: string; subtitle: string }> = {
     Sobremesas: {
-      title: 'Sobremesas artesanais feitas com dedicação.',
+  title: '',
       subtitle: 'Cada sobremesa é cuidadosamente preparada com ingredientes selecionados para garantir qualidade e sabor excecional.',
     },
     Bonus: {
