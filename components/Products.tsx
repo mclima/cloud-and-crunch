@@ -46,6 +46,12 @@ const products = [
     category: 'Sobremesas',
   },
   {
+    name: 'Brownie com Gelado de Morango e Molho de Chocolate',
+    description: 'Um brownie rico e decadente servido com gelado caseiro cremoso de morango e coberto com molho de chocolate aveludado. Uma combinação irresistível de texturas e sabores.',
+    image: '/images/brownie-strawberry-ice-cream-molho-chocolate.webp',
+    category: 'Sobremesas',
+  },
+  {
     name: 'Bolo Mocca',
     description: 'Um bolo rico e aromático com sabor intenso a café e chocolate. Camadas macias e húmidas que derretem na boca, perfeito para os amantes de café.',
     image: '/images/mocca-cake.webp',
