@@ -67,7 +67,7 @@ const products = [
     capacity: '300ml',
     minQuantity: '1',
     price: 'AD',
-    priceNote: 'Em testes para determinar quantos brownies cobre (16 ou mais)',
+    priceNote: 'Em testes para determinar quantos brownies cobre (talvez 16)',
     image: '/images/brownie-strawberry-ice-cream-molho-chocolate.webp',
   },
    {
