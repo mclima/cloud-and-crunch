@@ -68,7 +68,7 @@ const products = [
     format: 'Dose',
     capacity: '300ml',
     minQuantity: '1',
-    price: '11.00',
+    price: '9.50',
     priceNote: 'Em testes para determinar quantos brownies cobre (talvez 16)',
     image: '/images/brownie-strawberry-ice-cream-molho-chocolate.webp',
   },
