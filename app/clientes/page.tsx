@@ -70,6 +70,14 @@ const products = [
     priceNote: 'Em testes para determinar quantos brownies cobre (talvez 16)',
     image: '/images/brownie-strawberry-ice-cream-molho-chocolate.webp',
   },
+  {
+    name: 'Brownie',
+    format: 'Quadrado',
+    capacity: '5,25x5cm',
+    minQuantity: '24',
+    price: 'AD',
+    image: '/images/brownies-5x5.webp',
+  },
    {
     name: 'Tarte Maracujá com ou sem sementes',
     format: 'Tarte',

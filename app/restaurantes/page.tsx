@@ -73,6 +73,15 @@ const products = [
     image: '/images/brownie-strawberry-ice-cream-molho-chocolate.webp',
   },
   {
+    name: 'Brownie',
+    format: 'Quadrado',
+    capacity: '5,25x5cm',
+    minQuantity: '24',
+    price: '27.60',
+    priceNote: '€1.15 por unidade',
+    image: '/images/brownies-5x5.webp',
+  },
+  {
     name: 'Tarte Maracujá com ou sem sementes',
     format: 'Tarte',
     capacity: '28cm',
