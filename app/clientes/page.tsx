@@ -46,7 +46,7 @@ const products = [
     image: '/images/strawberry-cheescake.webp',
   },
   {
-    name: 'Brownie',
+    name: 'Brownies',
     format: 'Quadrado',
     capacity: '5,5x5,5cm',
     minQuantity: '16',

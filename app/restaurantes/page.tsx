@@ -73,7 +73,7 @@ const products = [
     image: '/images/brownie-strawberry-ice-cream-molho-chocolate.webp',
   },
   {
-    name: 'Brownie',
+    name: 'Brownies',
     format: 'Quadrado',
     capacity: '5,25x5cm',
     minQuantity: '24',
