@@ -50,7 +50,8 @@ const products = [
     format: 'Quadrado',
     capacity: '5,5x5,5cm',
     minQuantity: '16',
-    price: 'AD',
+    price: '40.00',
+    priceNote: '€2.50 por unidade',
     image: '/images/brownie-strawberry-ice-cream-molho-chocolate.webp',
   },
   {
@@ -66,7 +67,7 @@ const products = [
     format: 'Dose',
     capacity: '300ml',
     minQuantity: '1',
-    price: 'AD',
+    price: '15.00',
     priceNote: 'Em testes para determinar quantos brownies cobre (talvez 16)',
     image: '/images/brownie-strawberry-ice-cream-molho-chocolate.webp',
   },
@@ -75,7 +76,8 @@ const products = [
     format: 'Quadrado',
     capacity: '5,25x5cm',
     minQuantity: '24',
-    price: 'AD',
+    price: '50.40',
+    priceNote: '€2.10 por unidade',
     image: '/images/brownies-5x5.webp',
   },
    {
