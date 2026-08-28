@@ -118,7 +118,7 @@ const products = [
     format: 'Queque',
     capacity: '',
     minQuantity: '12',
-    price: '8.00',
+    price: '10.00',
     image: '/images/apple-raisin-queques.webp',
   },
   {
