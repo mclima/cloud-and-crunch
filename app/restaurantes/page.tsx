@@ -119,6 +119,7 @@ const products = [
     capacity: '',
     minQuantity: '12',
     price: '9.80',
+    priceNote: '€0.82 por unidade',
     image: '/images/apple-raisin-queques.webp',
   },
   {
@@ -127,6 +128,7 @@ const products = [
     capacity: 'AD',
     minQuantity: '1',
     price: '14.50',
+    priceNote: '€0.66 por fatia (22 fatias)',
     image: '/images/salame-chocolate-1.webp',
   },
   {
