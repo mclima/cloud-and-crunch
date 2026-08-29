@@ -89,7 +89,7 @@ const products = [
     image: '/images/em-breve.webp',
   },
   {
-    name: 'Tarte de Caramelo E chocolate',
+    name: 'Tarte de Chocolate e Caramelo',
     format: 'Tarte',
     capacity: '28cm',
     minQuantity: '1',
