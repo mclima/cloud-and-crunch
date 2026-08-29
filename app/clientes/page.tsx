@@ -89,6 +89,15 @@ const products = [
     image: '/images/em-breve.webp',
   },
   {
+    name: 'Tarte de Caramelo E chocolate',
+    format: 'Tarte',
+    capacity: '28cm',
+    minQuantity: '1',
+    price: '32.00',
+    priceNote: 'Serve 16 fatias',
+    image: '/images/tarte-chocolate-caramelo.webp',
+  },
+  {
     name: 'Bolo Mocca',
     format: 'Bolo',
     capacity: '16cm',

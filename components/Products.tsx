@@ -81,6 +81,12 @@ const products = [
     image: '/images/apple-raisin-queques.webp',
     category: 'Sobremesas',
   },
+  {
+    name: 'Tarte de Caramelo E chocolate',
+    description: 'Uma tarte irresistível que combina caramelo suave e chocolate rico. Textura cremosa e sabor equilibrado que vai conquistar todos os paladares. Serve 16 fatias.',
+    image: '/images/tarte-chocolate-caramelo.webp',
+    category: 'Sobremesas',
+  },
   
 ]
 
