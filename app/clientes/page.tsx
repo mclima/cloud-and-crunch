@@ -91,7 +91,7 @@ const products = [
   {
     name: 'Tarte de Chocolate e Caramelo',
     format: 'Tarte',
-    capacity: '28cm',
+    capacity: '30cm',
     minQuantity: '1',
     price: '32.00',
     priceNote: 'Serve 16 fatias',
