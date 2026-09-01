@@ -41,7 +41,7 @@ const products = [
     name: 'Mousse de Morango',
     format: 'Tacinha',
     capacity: '230ml',
-    minQuantity: 'AD',
+    minQuantity: '14',
     price: '1.75',
     image: '/images/mousse-morango.webp',
   },
