@@ -36,7 +36,7 @@ const products = [
   {
     name: 'Delícia de Bolacha',
     description: 'Uma sobremesa cremosa e irresistível feita com bolachas e um creme delicioso. Textura suave e sabor único que vai conquistar todos os paladares.',
-    image: '/images/doce-bolacha.webp',
+    image: '/images/delicia-bolacha.webp',
     category: 'Sobremesas',
   },
   {
