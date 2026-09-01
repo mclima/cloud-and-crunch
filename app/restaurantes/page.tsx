@@ -22,6 +22,14 @@ const products = [
     image: '/images/mousse-manga-taca-cheia.webp',
   },
   {
+    name: 'Doce de Bolacha',
+    format: 'Tacinha',
+    capacity: '230ml',
+    minQuantity: '10',
+    price: '1.25',
+    image: '/images/doce-bolacha.webp',
+  },
+  {
     name: 'Mousse de Maracujá com ou sem sementes',
     format: 'Tacinha',
     capacity: '230ml',
@@ -339,7 +347,7 @@ export default function PrecosPage() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     priority={index < 3}
                     {...(product.image === '/images/em-breve.webp' ? { loading: 'eager' as const } : {})}
-                    className={product.image === '/images/bolo-mocca-20.webp' ? 'object-cover [object-position:center] md:[object-position:center_-150px]' : product.image === '/images/bolo-mocca-8.webp' ? 'object-cover object-[center_63%]' : 'object-cover'}
+                    className={product.image === '/images/bolo-mocca-20.webp' ? 'object-cover [object-position:center] md:[object-position:center_-150px]' : product.image === '/images/bolo-mocca-8.webp' ? 'object-cover object-[center_63%]' : product.image === '/images/doce-bolacha.webp' ? 'object-cover object-[center_70%]' : 'object-cover'}
                   />
                 </div>
                 <div className="p-6">

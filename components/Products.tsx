@@ -34,6 +34,12 @@ const products = [
     category: 'Sobremesas',
   },
   {
+    name: 'Doce de Bolacha',
+    description: 'Uma sobremesa cremosa e irresistível feita com bolachas e um creme delicioso. Textura suave e sabor único que vai conquistar todos os paladares.',
+    image: '/images/doce-bolacha.webp',
+    category: 'Sobremesas',
+  },
+  {
     name: 'Salame de Chocolate',
     description: 'Um clássico português irresistível, feito com chocolate rico e bolachas crocantes. Perfeito para partilhar ou saborear sozinho.',
     image: '/images/salame-chocolate-1.webp',
