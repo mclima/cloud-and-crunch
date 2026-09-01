@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 const products = [
   {
-    name: 'Delícia',
+    name: 'Delícia de Chocolate e Baunilha',
     description: 'Uma sobremesa semi-fria artesanal que combina uma textura incrivelmente cremosa com um toque crocante. Perfeita para quem procura uma experiência refrescante e única.',
     image: '/images/delicia-gelada.webp',
     category: 'Sobremesas',
@@ -34,7 +34,7 @@ const products = [
     category: 'Sobremesas',
   },
   {
-    name: 'Doce de Bolacha',
+    name: 'Delícia de Bolacha',
     description: 'Uma sobremesa cremosa e irresistível feita com bolachas e um creme delicioso. Textura suave e sabor único que vai conquistar todos os paladares.',
     image: '/images/doce-bolacha.webp',
     category: 'Sobremesas',

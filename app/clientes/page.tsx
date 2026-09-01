@@ -6,7 +6,7 @@ import Script from 'next/script';
 
 const products = [
   {
-    name: 'Delícia',
+    name: 'Delícia de Chocolate e Baunilha',
     format: 'Tacinha',
     capacity: '230ml',
     minQuantity: 'Não Aplicável',
@@ -22,7 +22,7 @@ const products = [
     image: '/images/mousse-manga-taca-cheia.webp',
   },
   {
-    name: 'Doce de Bolacha',
+    name: 'Delícia de Bolacha',
     format: 'Tacinha',
     capacity: '230ml',
     minQuantity: '10',
