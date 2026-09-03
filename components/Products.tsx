@@ -93,6 +93,12 @@ const products = [
     image: '/images/tarte-chocolate-caramelo.webp',
     category: 'Sobremesas',
   },
+  {
+    name: 'Bolo de Cenoura',
+    description: 'Um bolo húmido e aromático feito com cenouras frescas. Textura macia e sabor equilibrado que agrada a todos os paladares.',
+    image: '/images/bolo-cenoura.webp',
+    category: 'Sobremesas',
+  },
   
 ]
 
@@ -134,15 +140,13 @@ export default function Products() {
 
       const cards = gsap.utils.toArray('.product-card')
       
-      gsap.set(cards, { y: 50, opacity: 0 })
-      
-      gsap.to(cards, {
+      gsap.from(cards, {
         scrollTrigger: {
           trigger: '.products-grid',
           start: 'top 80%',
         },
-        y: 0,
-        opacity: 1,
+        y: 50,
+        opacity: 0,
         duration: 0.8,
         stagger: 0.2,
         ease: 'power3.out',

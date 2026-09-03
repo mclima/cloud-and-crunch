@@ -130,6 +130,14 @@ const products = [
     image: '/images/bolo-mocca-20.webp',
   },
   {
+    name: 'Bolo de Cenoura',
+    format: 'Bolo',
+    capacity: '28cm',
+    minQuantity: '1',
+    price: '27.00',
+    image: '/images/bolo-cenoura.webp',
+  },
+  {
     name: 'Queques Maçã + Passas',
     format: 'Queque',
     capacity: '',
