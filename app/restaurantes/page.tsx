@@ -143,7 +143,7 @@ const products = [
     format: 'Queque',
     capacity: '',
     minQuantity: '12',
-    price: '9.80',
+    price: '9.45',
     priceNote: '€0.82 por unidade',
     image: '/images/apple-raisin-queques.webp',
   },
