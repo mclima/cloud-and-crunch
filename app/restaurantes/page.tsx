@@ -6,7 +6,7 @@ import Script from 'next/script';
 
 const products = [
   {
-    name: 'Delícia de Chocolate e Baunilha',
+    name: 'Delícia de Chocolate e Natas',
     format: 'Tacinha',
     capacity: '230ml',
     minQuantity: 'Não Aplicável',

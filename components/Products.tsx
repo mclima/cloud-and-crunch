@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 const products = [
   {
-    name: 'Delícia de Chocolate e Baunilha',
+    name: 'Delícia de Chocolate e Natas',
     description: 'Uma sobremesa semi-fria artesanal que combina uma textura incrivelmente cremosa com um toque crocante. Perfeita para quem procura uma experiência refrescante e única.',
     image: '/images/delicia-gelada.webp',
     category: 'Sobremesas',
