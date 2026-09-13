@@ -46,7 +46,7 @@ const products = [
     image: '/images/mousse-morango.webp',
   },
   {
-    name: 'Natas do Ceu',
+    name: 'Natas do Céu',
     format: 'Tacinha',
     capacity: '230ml',
     minQuantity: '9',
