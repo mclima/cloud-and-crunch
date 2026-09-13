@@ -50,7 +50,7 @@ const products = [
     format: 'Tacinha',
     capacity: '230ml',
     minQuantity: '9',
-    price: '2.20',
+    price: '2.25',
     image: '/images/natas-do-ceu.webp',
   },
   {
