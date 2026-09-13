@@ -40,6 +40,12 @@ const products = [
     category: 'Sobremesas',
   },
   {
+    name: 'Natas do Ceu',
+    description: 'Uma sobremesa tradicional portuguesa com camadas de natas cremosas e bolacha maria. Textura suave e sabor delicado que derrete na boca.',
+    image: '/images/natas-do-ceu.webp',
+    category: 'Sobremesas',
+  },
+  {
     name: 'Salame de Chocolate',
     description: 'Um clássico português irresistível, feito com chocolate rico e bolachas crocantes. Perfeito para partilhar ou saborear sozinho.',
     image: '/images/salame-chocolate-1.webp',

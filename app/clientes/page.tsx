@@ -46,6 +46,14 @@ const products = [
     image: '/images/mousse-morango.webp',
   },
   {
+    name: 'Natas do Ceu',
+    format: 'Tacinha',
+    capacity: '230ml',
+    minQuantity: '9',
+    price: '2.20',
+    image: '/images/natas-do-ceu.webp',
+  },
+  {
     name: 'Cheesecake de Morango',
     format: 'Bolo',
     capacity: '26x6,4cm',
