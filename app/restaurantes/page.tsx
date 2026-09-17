@@ -51,7 +51,7 @@ const products = [
     capacity: '230ml',
     minQuantity: '9',
     price: '1.10',
-    image: '/images/natas-do-ceu.webp',
+    image: '/images/natas-do-ceu-1.webp',
   },
   {
     name: 'Cheesecake de Morango',

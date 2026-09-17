@@ -42,7 +42,7 @@ const products = [
   {
     name: 'Natas do Céu',
     description: 'Uma sobremesa tradicional portuguesa com camadas de natas cremosas e bolacha maria. Textura suave e sabor delicado que derrete na boca.',
-    image: '/images/natas-do-ceu.webp',
+    image: '/images/natas-do-ceu-1.webp',
     category: 'Sobremesas',
   },
   {
