@@ -143,7 +143,7 @@ const products = [
     format: 'Bolo',
     capacity: '28cm',
     minQuantity: '1',
-    price: '18.00',
+    price: '13.00',
     image: '/images/bolo-cenoura.webp',
   },
   {
