@@ -19,6 +19,7 @@ const products = [
     capacity: '230ml',
     minQuantity: '15',
     price: '1.25',
+    priceNote: 'Total: €18.75 (15 unidades)',
     image: '/images/mousse-manga-taca-cheia.webp',
   },
   {
@@ -27,6 +28,7 @@ const products = [
     capacity: '230ml',
     minQuantity: '10',
     price: '1.25',
+    priceNote: 'Total: €12.50 (10 unidades)',
     image: '/images/delicia-bolacha.webp',
   },
   {
@@ -35,14 +37,16 @@ const products = [
     capacity: '230ml',
     minQuantity: '10',
     price: '1.75',
+    priceNote: 'Total: €17.50 (10 unidades)',
     image: '/images/mousse-maracuja.webp',
   },
   {
-    name: 'Mousse de Morango',
+    name: 'Cheesecake de Morango Individual',
     format: 'Tacinha',
     capacity: '230ml',
     minQuantity: '14',
     price: '1.75',
+    priceNote: 'Total: €24.50 (14 unidades)',
     image: '/images/mousse-morango.webp',
   },
   {
@@ -51,6 +55,7 @@ const products = [
     capacity: '230ml',
     minQuantity: '9',
     price: '1.10',
+    priceNote: 'Total: €9.90 (9 unidades)',
     image: '/images/natas-do-ceu-1.webp',
   },
   {
@@ -66,8 +71,8 @@ const products = [
     format: 'Quadrado',
     capacity: '5,5x5,5cm',
     minQuantity: '16',
-    price: '22.40',
-    priceNote: '€1.40 por unidade',
+    price: '1.40',
+    priceNote: 'Total: €22.40 (16 unidades)',
     image: '/images/brownie-strawberry-ice-cream-molho-chocolate.webp',
   },
   {
@@ -75,8 +80,8 @@ const products = [
     format: 'Bola',
     capacity: '40ml',
     minQuantity: '32 (2 bolas por brownie)',
-    price: '12.00',
-    priceNote: '€0.38 por unidade',
+    price: '0.38',
+    priceNote: 'Total: €12.00 (32 bolas)',
     image: '/images/brownie-strawberry-ice-cream-molho-chocolate.webp',
   },
   {
@@ -93,8 +98,8 @@ const products = [
     format: 'Quadrado',
     capacity: '5,25x5cm',
     minQuantity: '24',
-    price: '27.60',
-    priceNote: '€1.15 por unidade',
+    price: '1.15',
+    priceNote: 'Total: €27.60 (24 unidades)',
     image: '/images/brownies-5x5.webp',
   },
   {
@@ -151,8 +156,8 @@ const products = [
     format: 'Queque',
     capacity: '',
     minQuantity: '12',
-    price: '9.45',
-    priceNote: '€0.79 por unidade',
+    price: '0.79',
+    priceNote: 'Total: €9.45 (12 unidades)',
     image: '/images/apple-raisin-queques.webp',
   },
   {
@@ -184,14 +189,25 @@ const products = [
   },
 ];
 
-const bonus = {
-  name: 'Quiche de Espinafres',
-  format: 'Tarte',
-  capacity: '30cm',
-  minQuantity: '1',
-  price: '13.75',
-  image: '/images/quiche-espinafres.webp',
-};
+const bonus = [
+  {
+    name: 'Quiche de Espinafres',
+    format: 'Tarte',
+    capacity: '30cm',
+    minQuantity: '1',
+    price: '13.75',
+    image: '/images/quiche-espinafres.webp',
+  },
+  {
+    name: 'Quiche Individual',
+    format: 'Tartlete',
+    capacity: '12cm',
+    minQuantity: '10',
+    price: '1.90',
+    priceNote: 'Total: €19.00 (10 unidades) | Cogumelos, espinafres, cenoura, corgete',
+    image: '/images/quiche-individual.webp',
+  },
+];
 
 const packaging = [
   { item: 'Tacinha', capacity: '230ml', cardboard: '0.20', plastic: '0.16' },
@@ -412,49 +428,59 @@ export default function PrecosPage() {
           <h2 className="text-3xl font-bold text-[#3d2d22] mb-8 border-b-4 border-[#8b5a2b] inline-block pb-2">
             Bónus
           </h2>
-          <div className="max-w-md mx-auto">
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-[#8b5a2b]/30">
-              <div className="relative h-64 bg-[#efe2d5]">
-                <Image
-                  src={bonus.image}
-                  alt={bonus.name}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 448px"
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-[#3d2d22] mb-3">
-                  {bonus.name}
-                </h3>
-                <div className="space-y-2 text-sm text-gray-600 mb-4">
-                  <div className="flex justify-between">
-                    <span className="font-medium">Formato:</span>
-                    <span>{bonus.format}</span>
-                  </div>
-                  {bonus.capacity && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {bonus.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-[#8b5a2b]/30"
+              >
+                <div className="relative h-64 bg-[#efe2d5]">
+                  <Image
+                    src={item.image}
+                    alt={item.name}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 448px"
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-[#3d2d22] mb-3">
+                    {item.name}
+                  </h3>
+                  <div className="space-y-2 text-sm text-gray-600 mb-4">
                     <div className="flex justify-between">
-                      <span className="font-medium">
-                        {bonus.capacity.includes('ml') ? 'Capacidade:' : 'Tamanho:'}
-                      </span>
-                      <span>{bonus.capacity}</span>
+                      <span className="font-medium">Formato:</span>
+                      <span>{item.format}</span>
                     </div>
-                  )}
-                  <div className="flex justify-between">
-                    <span className="font-medium">Qtd. Mínima:</span>
-                    <span>{bonus.minQuantity}</span>
+                    {item.capacity && (
+                      <div className="flex justify-between">
+                        <span className="font-medium">
+                          {item.capacity.includes('ml') ? 'Capacidade:' : 'Tamanho:'}
+                        </span>
+                        <span>{item.capacity}</span>
+                      </div>
+                    )}
+                    <div className="flex justify-between">
+                      <span className="font-medium">Qtd. Mínima:</span>
+                      <span>{item.minQuantity}</span>
+                    </div>
                   </div>
-                </div>
-                <div className="pt-4 border-t border-stone-200">
-                  <div className="flex items-center justify-between">
-                    <span className="text-stone-600 font-medium">Preço:</span>
-                    <span className="text-3xl font-bold text-[#8b5a2b]">
-                      €{bonus.price}
-                    </span>
+                  <div className="pt-4 border-t border-stone-200">
+                    <div className="flex items-center justify-between">
+                      <span className="text-stone-600 font-medium">Preço:</span>
+                      <span className="text-3xl font-bold text-[#8b5a2b]">
+                        €{item.price}
+                      </span>
+                    </div>
+                    {item.priceNote && (
+                      <p className="text-xs text-stone-500 mt-2 text-right">
+                        {item.priceNote}
+                      </p>
+                    )}
                   </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
 

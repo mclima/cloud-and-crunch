@@ -16,7 +16,7 @@ const products = [
     category: 'Sobremesas',
   },
   {
-    name: 'Mousse de Morango',
+    name: 'Cheesecake de Morango Individual',
     description: 'Uma mousse leve e cremosa com sabor intenso a morango. Textura aveludada que proporciona uma experiência doce e refrescante.',
     image: '/images/mousse-morango.webp',
     category: 'Sobremesas',
@@ -73,6 +73,12 @@ const products = [
     name: 'Quiche de Espinafres',
     description: 'Uma quiche artesanal com espinafres frescos e queijo cremoso. Perfeita para um lanche saboroso ou refeição ligeira. Podemos adicionar bacon, presunto, etc. a um custo adicional.',
     image: '/images/quiche-espinafres.webp',
+    category: 'Bonus',
+  },
+  {
+    name: 'Quiches Individuais',
+    description: 'Quiches artesanais individuais com cogumelos, espinafres, cenoura e corgete. Perfeitas para eventos, lanches ou refeições ligeiras. Tamanho: 12cm.',
+    image: '/images/quiche-individual.webp',
     category: 'Bonus',
   },
   {
