@@ -76,7 +76,7 @@ const products = [
     category: 'Bonus',
   },
   {
-    name: 'Quiches Individuais',
+    name: 'Quiche Individual',
     description: 'Quiches artesanais individuais com cogumelos, espinafres, cenoura e corgete. Perfeitas para eventos, lanches ou refeições ligeiras. Tamanho: 12cm.',
     image: '/images/quiche-individual.webp',
     category: 'Bonus',
