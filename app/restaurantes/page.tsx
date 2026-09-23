@@ -53,9 +53,9 @@ const products = [
     name: 'Natas do Céu',
     format: 'Tacinha',
     capacity: '230ml',
-    minQuantity: '9',
-    price: '1.10',
-    priceNote: 'Total: €9.90 (9 unidades)',
+    minQuantity: '10',
+    price: '.90',
+    priceNote: 'Total: €9.00 (10 unidades)',
     image: '/images/natas-do-ceu-1.webp',
   },
   {
