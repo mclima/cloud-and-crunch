@@ -76,15 +76,6 @@ const products = [
     image: '/images/brownie-strawberry-ice-cream-molho-chocolate.webp',
   },
   {
-    name: 'Gelado de Morango Caseiro',
-    format: 'Bola',
-    capacity: '40ml',
-    minQuantity: '32 (2 bolas por brownie)',
-    price: '0.38',
-    priceNote: 'Total: €12.00 (32 bolas)',
-    image: '/images/brownie-strawberry-ice-cream-molho-chocolate.webp',
-  },
-  {
     name: 'Molho de Chocolate',
     format: 'Dose',
     capacity: '300ml',
@@ -101,6 +92,15 @@ const products = [
     price: '1.15',
     priceNote: 'Total: €27.60 (24 unidades)',
     image: '/images/brownies-5x5.webp',
+  },
+  {
+    name: 'Gelado de Tangerina Caseiro',
+    format: 'Cup',
+    capacity: '350ml',
+    minQuantity: '2',
+    price: '5.75',
+    priceNote: 'Total: €11.50 (2 unidades)',
+    image: '/images/gelado-tangerina.webp',
   },
   {
     name: 'Tarte Maracujá com ou sem sementes',

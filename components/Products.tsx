@@ -64,6 +64,12 @@ const products = [
     category: 'Sobremesas',
   },
   {
+    name: 'Gelado the Tangerina',
+    description: 'Este gelado é muito gostoso e cremoso, com um sabor refrescante e natural de tangerina. Textura suave e aveludada que derrete na boca.',
+    image: '/images/gelado-tangerina.webp',
+    category: 'Sobremesas',
+  },
+  {
     name: 'Bolo Mocca',
     description: 'Um bolo rico e aromático com sabor intenso a café e chocolate. Camadas macias e húmidas que derretem na boca, perfeito para os amantes de café.',
     image: '/images/bolo-mocca-16.webp',
