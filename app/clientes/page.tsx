@@ -163,7 +163,7 @@ const products = [
   {
     name: 'Salame de Chocolate',
     format: 'Rolo',
-    capacity: 'AD',
+    capacity: '22 Fatias',
     minQuantity: '1',
     price: '22.00',
     priceNote: '€1.00 por fatia (22 fatias)',
