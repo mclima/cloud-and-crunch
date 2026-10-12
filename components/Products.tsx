@@ -72,7 +72,7 @@ const products = [
   {
     name: 'Bolo Mocca',
     description: 'Um bolo rico e aromático com sabor intenso a café e chocolate. Camadas macias e húmidas que derretem na boca, perfeito para os amantes de café.',
-    image: '/images/bolo-mocca-16.webp',
+    image: '/images/bolo-mocca-24.webp',
     category: 'Sobremesas',
   },
   {
