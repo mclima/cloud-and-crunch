@@ -144,6 +144,14 @@ const products = [
     image: '/images/bolo-mocca-20.webp',
   },
   {
+    name: 'Bolo Chocolate Simples',
+    format: 'Redondo',
+    capacity: '24cm',
+    minQuantity: '1',
+    price: '21.50',
+    image: '/images/bolo-chocolate-simples.webp',
+  },
+  {
     name: 'Bolo de Cenoura',
     format: 'Bolo',
     capacity: '28cm',
@@ -206,6 +214,15 @@ const bonus = [
     price: '3.90',
     priceNote: 'Total: €39.00 (10 unidades) | Cogumelos, espinafres, cenoura, corgete',
     image: '/images/quiche-individual.webp',
+  },
+  {
+    name: 'Pão Artesanal',
+    format: 'Redondo',
+    capacity: '24cm',
+    minQuantity: '1',
+    price: '3.75',
+    priceNote: 'Feito com massa mãe',
+    image: '/images/pao-artesanal.webp',
   },
 ];
 

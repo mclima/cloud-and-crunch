@@ -76,6 +76,12 @@ const products = [
     category: 'Sobremesas',
   },
   {
+    name: 'Bolo Chocolate Simples',
+    description: 'Um bolo de chocolate simples e delicioso, com textura macia e sabor autêntico. Tamanho: 24cm.',
+    image: '/images/bolo-chocolate-simples.webp',
+    category: 'Sobremesas',
+  },
+  {
     name: 'Quiche de Espinafres',
     description: 'Uma quiche artesanal com espinafres frescos e queijo cremoso. Perfeita para um lanche saboroso ou refeição ligeira. Podemos adicionar bacon, presunto, etc. a um custo adicional.',
     image: '/images/quiche-espinafres.webp',
@@ -85,6 +91,12 @@ const products = [
     name: 'Quiche Individual',
     description: 'Quiches artesanais individuais com cogumelos, espinafres, cenoura e corgete. Perfeitas para eventos, lanches ou refeições ligeiras. Tamanho: 12cm.',
     image: '/images/quiche-individual.webp',
+    category: 'Bonus',
+  },
+  {
+    name: 'Pão Artesanal',
+    description: 'Pão artesanal feito com massa mãe, de fermentação lenta e sabor autêntico. Formato redondo. Tamanho: 24cm.',
+    image: '/images/pao-artesanal.webp',
     category: 'Bonus',
   },
   {
