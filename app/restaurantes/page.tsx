@@ -215,15 +215,15 @@ const bonus = [
     priceNote: 'Total: €19.00 (10 unidades) | Cogumelos, espinafres, cenoura, corgete',
     image: '/images/quiche-individual.webp',
   },
-  // {
-  //   name: 'Pão Artesanal',
-  //   format: 'Redondo',
-  //   capacity: '24cm',
-  //   minQuantity: '1',
-  //   price: '2.50',
-  //   priceNote: 'Feito com massa mãe',
-  //   image: '/images/pao-artesanal.webp',
-  // },
+  {
+    name: 'Pão Artesanal',
+    format: 'Redondo',
+    capacity: '24cm',
+    minQuantity: '1',
+    price: '2.75',
+    priceNote: 'Feito com massa mãe',
+    image: '/images/pao-artesanal-24.webp',
+  },
 ];
 
 const packaging = [

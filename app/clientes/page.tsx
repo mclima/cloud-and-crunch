@@ -222,7 +222,7 @@ const bonus = [
     minQuantity: '1',
     price: '5.00',
     priceNote: 'Feito com massa mãe',
-    image: '/images/pao-artesanal.webp',
+    image: '/images/pao-artesanal-24.webp',
   },
 ];
 
