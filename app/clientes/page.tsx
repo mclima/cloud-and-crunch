@@ -218,7 +218,7 @@ const bonus = [
   {
     name: 'Pão Artesanal',
     format: 'Redondo',
-    capacity: '24cm',
+    capacity: '23cm',
     minQuantity: '1',
     price: '5.00',
     priceNote: 'Feito com massa mãe',
