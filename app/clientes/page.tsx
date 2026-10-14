@@ -220,7 +220,7 @@ const bonus = [
     format: 'Redondo',
     capacity: '24cm',
     minQuantity: '1',
-    price: '3.75',
+    price: '5.00',
     priceNote: 'Feito com massa mãe',
     image: '/images/pao-artesanal.webp',
   },
