@@ -49,15 +49,15 @@ const products = [
     priceNote: 'Total: €24.50 (14 unidades)',
     image: '/images/mousse-morango.webp',
   },
-  {
-    name: 'Natas do Céu',
-    format: 'Tacinha',
-    capacity: '230ml',
-    minQuantity: '10',
-    price: '.90',
-    priceNote: 'Total: €9.00 (10 unidades)',
-    image: '/images/natas-do-ceu-1.webp',
-  },
+  // {
+  //   name: 'Natas do Céu',
+  //   format: 'Tacinha',
+  //   capacity: '230ml',
+  //   minQuantity: '10',
+  //   price: '.90',
+  //   priceNote: 'Total: €9.00 (10 unidades)',
+  //   image: '/images/natas-do-ceu-1.webp',
+  // },
   {
     name: 'Cheesecake de Morango',
     format: 'Bolo',
@@ -102,14 +102,14 @@ const products = [
     priceNote: 'Total: €11.50 (2 unidades)',
     image: '/images/gelado-tangerina.webp',
   },
-  {
-    name: 'Tarte Maracujá com ou sem sementes',
-    format: 'Tarte',
-    capacity: '28cm',
-    minQuantity: '1',
-    price: '19.00',
-    image: '/images/em-breve.webp',
-  },
+  // {
+  //   name: 'Tarte Maracujá com ou sem sementes',
+  //   format: 'Tarte',
+  //   capacity: '28cm',
+  //   minQuantity: '1',
+  //   price: '19.00',
+  //   image: '/images/em-breve.webp',
+  // },
   {
     name: 'Tarte de Chocolate e Caramelo',
     format: 'Tarte',
@@ -215,15 +215,15 @@ const bonus = [
     priceNote: 'Total: €19.00 (10 unidades) | Cogumelos, espinafres, cenoura, corgete',
     image: '/images/quiche-individual.webp',
   },
-  {
-    name: 'Pão Artesanal',
-    format: 'Redondo',
-    capacity: '23cm',
-    minQuantity: '1',
-    price: '3.00',
-    priceNote: 'Feito com massa mãe',
-    image: '/images/pao-artesanal-24.webp',
-  },
+  // {
+  //   name: 'Pão Artesanal',
+  //   format: 'Redondo',
+  //   capacity: '23cm',
+  //   minQuantity: '1',
+  //   price: '3.00',
+  //   priceNote: 'Feito com massa mãe',
+  //   image: '/images/pao-artesanal-24.webp',
+  // },
 ];
 
 const packaging = [
