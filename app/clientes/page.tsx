@@ -178,6 +178,14 @@ const products = [
     image: '/images/salame-chocolate-1.webp',
   },
   {
+    name: 'Bolo Mousse de Morango',
+    format: 'Redondo',
+    capacity: '20x20cm',
+    minQuantity: '1',
+    price: '32.50',
+    image: '/images/bolo-mousse-morango.webp',
+  },
+  {
     name: 'Bolo Sária',
     format: 'Bolo',
     capacity: '24"',

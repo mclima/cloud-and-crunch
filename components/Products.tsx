@@ -100,6 +100,12 @@ const products = [
     category: 'Bonus',
   },
   {
+    name: 'Bolo Mousse de Morango',
+    description: 'Um bolo irresistível com base de brownie e coberto com uma mousse cremosa de morango. A combinação perfeita de chocolate intenso e frescura de morango. Tamanho: 20x20cm.',
+    image: '/images/bolo-mousse-morango.webp',
+    category: 'Sobremesas',
+  },
+  {
     name: 'Bolo Sária',
     description: 'Um bolo delicioso e cremoso de chocolate branco com recheio de fruta e chantilly. Textura suave e sabor irresistível que derrete na boca.',
     image: '/images/bolo-chocolate-branco.webp',
