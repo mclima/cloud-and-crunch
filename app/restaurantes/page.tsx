@@ -173,8 +173,8 @@ const products = [
     format: 'Rolo',
     capacity: '22 Fatias',
     minQuantity: '1',
-    price: '14.50',
-    priceNote: '€0.66 por fatia (22 fatias)',
+    price: '0.66',
+    priceNote: 'Total: €14.50 (22 fatias)',
     image: '/images/salame-chocolate-1.webp',
   },
   {
