@@ -182,7 +182,7 @@ const products = [
     format: 'Quadrado',
     capacity: '20x20cm',
     minQuantity: '1',
-    price: '25.50',
+    price: '25.00',
     image: '/images/bolo-mousse-morango.webp',
   },
   {
