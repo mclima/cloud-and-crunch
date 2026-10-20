@@ -179,7 +179,7 @@ const products = [
   },
   {
     name: 'Bolo Mousse de Morango',
-    format: 'Redondo',
+    format: 'Quadrado',
     capacity: '20x20cm',
     minQuantity: '1',
     price: '32.50',

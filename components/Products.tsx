@@ -95,7 +95,7 @@ const products = [
   },
   {
     name: 'Pão Artesanal',
-    description: 'Pão artesanal feito com massa mãe, de fermentação lenta e sabor autêntico. Formato redondo. Tamanho: 23cm.',
+    description: 'Pão artesanal feito com massa mãe, de fermentação lenta e sabor autêntico. Tamanho: 23cm.',
     image: '/images/pao-artesanal.webp',
     category: 'Bonus',
   },
