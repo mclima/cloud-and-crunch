@@ -75,12 +75,12 @@ const products = [
     image: '/images/bolo-mocca-24.webp',
     category: 'Sobremesas',
   },
-  {
-    name: 'Bolo Chocolate Simples',
-    description: 'Um bolo de chocolate simples e delicioso, com textura macia e sabor autêntico. Tamanho: 24cm.',
-    image: '/images/bolo-chocolate-simples.webp',
-    category: 'Sobremesas',
-  },
+  // {
+  //   name: 'Bolo Chocolate Simples',
+  //   description: 'Um bolo de chocolate simples e delicioso, com textura macia e sabor autêntico. Tamanho: 24cm.',
+  //   image: '/images/bolo-chocolate-simples.webp',
+  //   category: 'Sobremesas',
+  // },
   {
     name: 'Quiche de Espinafres',
     description: 'Uma quiche artesanal com espinafres frescos e queijo cremoso. Perfeita para um lanche saboroso ou refeição ligeira. Podemos adicionar bacon, presunto, etc. a um custo adicional.',
