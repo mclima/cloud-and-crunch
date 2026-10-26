@@ -69,12 +69,7 @@ const products = [
     image: '/images/gelado-tangerina.webp',
     category: 'Sobremesas',
   },
-  {
-    name: 'Bolo Mocca',
-    description: 'Um bolo rico e aromático com sabor intenso a café e chocolate. Camadas macias e húmidas que derretem na boca, perfeito para os amantes de café.',
-    image: '/images/bolo-mocca-24.webp',
-    category: 'Sobremesas',
-  },
+ 
   // {
   //   name: 'Bolo Chocolate Simples',
   //   description: 'Um bolo de chocolate simples e delicioso, com textura macia e sabor autêntico. Tamanho: 24cm.',
@@ -105,6 +100,12 @@ const products = [
     image: '/images/bolo-mousse-morango.webp',
     category: 'Sobremesas',
   },
+   {
+    name: 'Bolo Mocca',
+    description: 'Um bolo rico e aromático com sabor intenso a café e chocolate. Camadas macias e húmidas que derretem na boca, perfeito para os amantes de café.',
+    image: '/images/bolo-mocca-24.webp',
+    category: 'Sobremesas',
+  },
   {
     name: 'Bolo Sária',
     description: 'Um bolo delicioso e cremoso de chocolate branco com recheio de fruta e chantilly. Textura suave e sabor irresistível que derrete na boca.',
@@ -115,12 +116,6 @@ const products = [
     name: 'Bolo de Chocolate',
     description: 'Um bolo de chocolate intenso coberto com ganache de chocolate rico e aveludado. Uma experiência irresistível para os verdadeiros amantes de chocolate.',
     image: '/images/bolo-chocolate-preto.webp',
-    category: 'Sobremesas',
-  },
-  {
-    name: 'Queques de Maçã e Passas',
-    description: 'Queques artesanais macios e aromáticos, repletos de maçã fresca e passas suculentas. Ideais para acompanhar um café ou chá.',
-    image: '/images/apple-raisin-queques.webp',
     category: 'Sobremesas',
   },
   {
@@ -135,6 +130,12 @@ const products = [
     image: '/images/bolo-cenoura.webp',
     category: 'Sobremesas',
   },
+  {
+    name: 'Queques de Maçã e Passas',
+    description: 'Queques artesanais macios e aromáticos, repletos de maçã fresca e passas suculentas. Ideais para acompanhar um café ou chá.',
+    image: '/images/apple-raisin-queques.webp',
+    category: 'Sobremesas',
+  }
   
 ]
 
