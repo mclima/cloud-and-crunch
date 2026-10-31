@@ -143,14 +143,14 @@ const products = [
     price: '29.75',
     image: '/images/bolo-mocca-20.webp',
   },
-  {
-    name: 'Bolo Chocolate Simples',
-    format: 'Redondo',
-    capacity: '24cm',
-    minQuantity: '1',
-    price: '21.50',
-    image: '/images/bolo-chocolate-simples.webp',
-  },
+  // {
+  //   name: 'Bolo Chocolate Simples',
+  //   format: 'Redondo',
+  //   capacity: '24cm',
+  //   minQuantity: '1',
+  //   price: '21.50',
+  //   image: '/images/bolo-chocolate-simples.webp',
+  // },
   {
     name: 'Bolo de Cenoura',
     format: 'Bolo',
