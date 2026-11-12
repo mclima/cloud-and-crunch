@@ -175,18 +175,19 @@ export default function Products() {
         ease: 'power3.out',
       })
 
-      const cards = gsap.utils.toArray('.product-card')
-      
-      gsap.from(cards, {
-        scrollTrigger: {
-          trigger: '.products-grid',
-          start: 'top 80%',
-        },
-        y: 50,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.2,
-        ease: 'power3.out',
+      gsap.utils.toArray<HTMLElement>('.products-grid').forEach((grid) => {
+        gsap.from(grid.querySelectorAll('.product-card'), {
+          scrollTrigger: {
+            trigger: grid,
+            start: 'top 80%',
+          },
+          y: 50,
+          opacity: 0,
+          duration: 0.8,
+          stagger: 0.2,
+          ease: 'power3.out',
+          clearProps: 'transform',
+        })
       })
     }, productsRef)
 
@@ -218,17 +219,17 @@ export default function Products() {
 
         </div>
 
-        {Object.entries(groupedProducts).map(([category, categoryProducts]) => (
+        {Object.entries(groupedProducts).map(([category, categoryProducts], categoryIndex) => (
           <div key={category} className="mb-20 last:mb-0">
             <h3 className="mb-12 text-center text-3xl text-[#3d2d22]">
               {categoryInfo[category]?.title || category}
             </h3>
 
             <div className="products-grid grid items-start gap-12 lg:grid-cols-3">
-              {categoryProducts.map((product) => (
+              {categoryProducts.map((product, index) => (
                 <article
                   key={product.name}
-                  className="product-card group overflow-hidden rounded-3xl bg-[#faf6f2] transition-transform duration-300 hover:scale-[1.02]"
+                  className="product-card group overflow-hidden rounded-3xl bg-[#faf6f2] transition-[scale] duration-300 hover:scale-[1.02]"
                 >
                   <div className="relative aspect-square overflow-hidden bg-[#faf6f2]">
                     <Image
@@ -236,6 +237,7 @@ export default function Products() {
                       alt={product.name}
                       width={600}
                       height={600}
+                      loading={categoryIndex === 0 && index < 3 ? 'eager' : 'lazy'}
                       className={`h-full w-full transition-transform duration-500 group-hover:scale-110 object-cover ${
                         product.image === '/images/bolo-chocolate-preto.webp' 
                           ? 'object-[70%_center]' 
