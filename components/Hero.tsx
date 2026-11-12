@@ -81,13 +81,6 @@ export default function Hero() {
   Fazer Encomenda
 </a>
 
-              <a
-                href="tel:+351913593662"
-                className="box-border flex h-14 w-52 items-center justify-center rounded-xl border border-[#8b5a2b] font-medium text-[#8b5a2b] transition hover:bg-[#8b5a2b] hover:text-white"
-              >
-                Falar Connosco
-              </a>
-
             </div>
 
           </div>
