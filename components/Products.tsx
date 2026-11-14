@@ -118,12 +118,12 @@ const products = [
     image: '/images/bolo-chocolate-preto.webp',
     category: 'Sobremesas',
   },
-  {
-    name: 'Tarte de Chocolate e Caramelo',
-    description: 'Uma tarte irresistível que combina caramelo suave e chocolate rico. Textura cremosa e sabor equilibrado que vai conquistar todos os paladares. Serve 16 fatias.',
-    image: '/images/tarte-chocolate-caramelo.webp',
-    category: 'Sobremesas',
-  },
+  // {
+  //   name: 'Tarte de Chocolate e Caramelo',
+  //   description: 'Uma tarte irresistível que combina caramelo suave e chocolate rico. Textura cremosa e sabor equilibrado que vai conquistar todos os paladares. Serve 16 fatias.',
+  //   image: '/images/tarte-chocolate-caramelo.webp',
+  //   category: 'Sobremesas',
+  // },
   {
     name: 'Bolo de Cenoura',
     description: 'Um bolo húmido e aromático feito com cenouras frescas. Textura macia e sabor equilibrado que agrada a todos os paladares.',

@@ -19,7 +19,7 @@ const products = [
     capacity: '230ml',
     minQuantity: '15',
     price: '3.50',
-    priceNote: 'Total: €37.50 (15 unidades)',
+    priceNote: 'Total: €52.50 (15 unidades)',
     image: '/images/mousse-manga-taca-cheia.webp',
   },
   {
@@ -28,7 +28,7 @@ const products = [
     capacity: '230ml',
     minQuantity: '10',
     price: '3.50',
-    priceNote: 'Total: €25.00 (10 unidades)',
+    priceNote: 'Total: €35.00 (10 unidades)',
     image: '/images/delicia-bolacha.webp',
   },
   {
@@ -37,7 +37,7 @@ const products = [
     capacity: '230ml',
     minQuantity: '10',
     price: '4.00',
-    priceNote: 'Total: €35.00 (10 unidades)',
+    priceNote: 'Total: €40.00 (10 unidades)',
     image: '/images/mousse-maracuja.webp',
   },
   {
@@ -46,7 +46,7 @@ const products = [
     capacity: '230ml',
     minQuantity: '14',
     price: '4.00',
-    priceNote: 'Total: €49.00 (14 unidades)',
+    priceNote: 'Total: €56.00 (14 unidades)',
     image: '/images/mousse-morango.webp',
   },
   {
@@ -55,7 +55,7 @@ const products = [
     capacity: '230ml',
     minQuantity: '10',
     price: '3.50',
-    priceNote: 'Total: €23.00 (10 unidades)',
+    priceNote: 'Total: €35.00 (10 unidades)',
     image: '/images/natas-do-ceu-1.webp',
   },
   {
@@ -63,7 +63,7 @@ const products = [
     format: 'Bolo',
     capacity: '26x6,4cm',
     minQuantity: '1',
-    price: '48.00',
+    price: '54.00',
     image: '/images/strawberry-cheescake.webp',
   },
   {
@@ -72,7 +72,7 @@ const products = [
     capacity: '5,5x5,5cm',
     minQuantity: '16',
     price: '3.00',
-    priceNote: 'Total: €40.00 (16 unidades)',
+    priceNote: 'Total: €48.00 (16 unidades)',
     image: '/images/brownie-strawberry-ice-cream-molho-chocolate.webp',
   },
   {
@@ -90,7 +90,7 @@ const products = [
     capacity: '5,25x5cm',
     minQuantity: '24',
     price: '2.80',
-    priceNote: 'Total: €50.40 (24 unidades)',
+    priceNote: 'Total: €67.20 (24 unidades)',
     image: '/images/brownies-5x5.webp',
   },
   {
@@ -99,7 +99,7 @@ const products = [
     capacity: '230ml',
     minQuantity: '4',
     price: '4.00',
-    priceNote: 'Total: €17.00 (4 unidades)',
+    priceNote: 'Total: €16.00 (4 unidades)',
     image: '/images/gelado-tangerina.webp',
   },
   //  {
@@ -156,7 +156,7 @@ const products = [
     format: 'Bolo',
     capacity: '28cm',
     minQuantity: '1',
-    price: '19.50',
+    price: '21.00',
     image: '/images/bolo-cenoura.webp',
   },
   {
@@ -165,7 +165,7 @@ const products = [
     capacity: '',
     minQuantity: '12',
     price: '1.50',
-    priceNote: 'Total: €17.00 (12 unidades)',
+    priceNote: 'Total: €18.00 (12 unidades)',
     image: '/images/apple-raisin-queques.webp',
   },
   {
@@ -174,7 +174,7 @@ const products = [
     capacity: '22 Fatias',
     minQuantity: '1',
     price: '1.50',
-    priceNote: 'Total: €22.00 (22 fatias)',
+    priceNote: 'Total: €33.00 (22 fatias)',
     image: '/images/salame-chocolate-1.webp',
   },
   {
@@ -182,7 +182,7 @@ const products = [
     format: 'Quadrado',
     capacity: '20x20cm',
     minQuantity: '1',
-    price: '31.50',
+    price: '40.00',
     image: '/images/bolo-mousse-morango.webp',
   },
   {
