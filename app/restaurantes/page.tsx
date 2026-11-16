@@ -54,7 +54,7 @@ const products = [
     format: 'Tacinha',
     capacity: '230ml',
     minQuantity: '10',
-    price: '1.15',
+    price: '1.25',
     priceNote: 'Total: €11.50 (10 unidades)',
     image: '/images/natas-do-ceu-1.webp',
   },
