@@ -172,8 +172,8 @@ const products = [
     format: 'Queque',
     capacity: '',
     minQuantity: '12',
-    price: '0.79',
-    priceNote: 'Total: €9.48 (12 unidades)',
+    price: '0.80',
+    priceNote: 'Total: €9.60 (12 unidades)',
     image: '/images/apple-raisin-queques.webp',
   },
   {
@@ -181,8 +181,8 @@ const products = [
     format: 'Rolo',
     capacity: '22 Fatias',
     minQuantity: '1',
-    price: '0.66',
-    priceNote: 'Total: €14.52 (22 fatias)',
+    price: '0.70',
+    priceNote: 'Total: €15.40 (22 fatias)',
     image: '/images/salame-chocolate-1.webp',
   },
   // {
