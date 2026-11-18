@@ -375,7 +375,7 @@ export default function PrecosPage() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-[#3d2d22] mb-4">
-            Tabela de Preços
+            Tabela de Preços - Restaurantes
           </h1>
           <p className="text-lg text-stone-700 mb-2">
             Preços em euros (€) - Valores sujeitos a alteração
