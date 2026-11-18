@@ -27,8 +27,8 @@ const products = [
     format: 'Tacinha',
     capacity: '230ml',
     minQuantity: '10',
-    price: '1.25',
-    priceNote: 'Total: €12.50 (10 unidades)',
+    price: '1.35',
+    priceNote: 'Total: €13.50 (10 unidades)',
     image: '/images/delicia-bolacha.webp',
   },
   {

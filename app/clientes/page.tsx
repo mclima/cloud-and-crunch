@@ -19,7 +19,7 @@ const products = [
     capacity: '230ml',
     minQuantity: '15',
     price: '3.25',
-    priceNote: 'Total: €52.50 (15 unidades)',
+    priceNote: 'Total: €48.75 (15 unidades)',
     image: '/images/mousse-manga-taca-cheia.webp',
   },
   {
@@ -27,8 +27,8 @@ const products = [
     format: 'Tacinha',
     capacity: '230ml',
     minQuantity: '10',
-    price: '3.50',
-    priceNote: 'Total: €35.00 (10 unidades)',
+    price: '3.75',
+    priceNote: 'Total: €37.50 (10 unidades)',
     image: '/images/delicia-bolacha.webp',
   },
   {
@@ -46,7 +46,7 @@ const products = [
     capacity: '230ml',
     minQuantity: '14',
     price: '3.75',
-    priceNote: 'Total: €56.00 (14 unidades)',
+    priceNote: 'Total: €52.50 (14 unidades)',
     image: '/images/mousse-morango.webp',
   },
   {
@@ -72,7 +72,7 @@ const products = [
     capacity: '5,5x5,5cm',
     minQuantity: '16',
     price: '2.90',
-    priceNote: 'Total: €48.00 (16 unidades)',
+    priceNote: 'Total: €46.40 (16 unidades)',
     image: '/images/brownie-strawberry-ice-cream-molho-chocolate.webp',
   },
   {
@@ -173,8 +173,8 @@ const products = [
     format: 'Rolo',
     capacity: '22 Fatias',
     minQuantity: '1',
-    price: '1.50',
-    priceNote: 'Total: €33.00 (22 fatias)',
+    price: '1.15',
+    priceNote: 'Total: €25.30 (22 fatias)',
     image: '/images/salame-chocolate-1.webp',
   },
   {
