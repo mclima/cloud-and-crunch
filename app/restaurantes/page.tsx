@@ -185,24 +185,24 @@ const products = [
     priceNote: 'Total: €14.50 (22 fatias)',
     image: '/images/salame-chocolate-1.webp',
   },
-  {
-    name: 'Bolo Sária',
-    format: 'Bolo',
-    capacity: '24"',
-    minQuantity: '1',
-    price: '27.00',
-    priceNote: '+ ± €5.00 recheio | + ± €12.00 toppings (pepitas + fruta)',
-    image: '/images/bolo-chocolate-branco.webp',
-  },
-  {
-    name: 'Bolo de Chocolate',
-    format: 'Bolo',
-    capacity: '24"',
-    minQuantity: '1',
-    price: '20.50',
-    priceNote: '+ ± €10.00 custo de fruta',
-    image: '/images/bolo-chocolate-preto.webp',
-  },
+  // {
+  //   name: 'Bolo Sária',
+  //   format: 'Bolo',
+  //   capacity: '24"',
+  //   minQuantity: '1',
+  //   price: '27.00',
+  //   priceNote: '+ ± €5.00 recheio | + ± €12.00 toppings (pepitas + fruta)',
+  //   image: '/images/bolo-chocolate-branco.webp',
+  // },
+  // {
+  //   name: 'Bolo de Chocolate',
+  //   format: 'Bolo',
+  //   capacity: '24"',
+  //   minQuantity: '1',
+  //   price: '20.50',
+  //   priceNote: '+ ± €10.00 custo de fruta',
+  //   image: '/images/bolo-chocolate-preto.webp',
+  // },
 ];
 
 const bonus = [
