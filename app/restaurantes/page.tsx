@@ -59,14 +59,6 @@ const products = [
     image: '/images/natas-do-ceu-1.webp',
   },
   {
-    name: 'Cheesecake de Morango',
-    format: 'Bolo',
-    capacity: '26x6,4cm',
-    minQuantity: '1',
-    price: '26.00',
-    image: '/images/strawberry-cheescake.webp',
-  },
-  {
     name: 'Brownie',
     format: 'Quadrado',
     capacity: '5,5x5,5cm',
@@ -119,6 +111,22 @@ const products = [
   //   priceNote: 'Serve 16 fatias',
   //   image: '/images/tarte-chocolate-caramelo.webp',
   // },
+  {
+    name: 'Cheesecake de Morango',
+    format: 'Bolo',
+    capacity: '26x6,4cm',
+    minQuantity: '1',
+    price: '26.00',
+    image: '/images/strawberry-cheescake.webp',
+  },
+  {
+    name: 'Bolo Mousse de Morango',
+    format: 'Quadrado',
+    capacity: '20x20cm',
+    minQuantity: '1',
+    price: '26.00',
+    image: '/images/bolo-mousse-morango.webp',
+  },
   {
     name: 'Bolo Mocca',
     format: 'Bolo',
@@ -176,14 +184,6 @@ const products = [
     price: '0.66',
     priceNote: 'Total: €14.50 (22 fatias)',
     image: '/images/salame-chocolate-1.webp',
-  },
-  {
-    name: 'Bolo Mousse de Morango',
-    format: 'Quadrado',
-    capacity: '20x20cm',
-    minQuantity: '1',
-    price: '26.00',
-    image: '/images/bolo-mousse-morango.webp',
   },
   {
     name: 'Bolo Sária',

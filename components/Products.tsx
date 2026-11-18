@@ -51,12 +51,7 @@ const products = [
     image: '/images/salame-chocolate-1.webp',
     category: 'Sobremesas',
   },
-  {
-    name: 'Cheesecake de Morango',
-    description: 'Um cheesecake cremoso com uma camada generosa de morangos frescos. Uma sobremesa clássica feita com ingredientes de qualidade premium.',
-    image: '/images/strawberry-cheescake.webp',
-    category: 'Sobremesas',
-  },
+ 
   {
     name: 'Brownie com Gelado de Morango e Molho de Chocolate',
     description: 'Um brownie rico e decadente servido com gelado caseiro cremoso de morango e coberto com molho de chocolate aveludado. Uma combinação irresistível de texturas e sabores.',
@@ -67,6 +62,12 @@ const products = [
     name: 'Gelado the Tangerina',
     description: 'Este gelado é muito gostoso e cremoso, com um sabor refrescante e natural de tangerina. Textura suave e aveludada que derrete na boca.',
     image: '/images/gelado-tangerina.webp',
+    category: 'Sobremesas',
+  },
+   {
+    name: 'Cheesecake de Morango',
+    description: 'Um cheesecake cremoso com uma camada generosa de morangos frescos. Uma sobremesa clássica feita com ingredientes de qualidade premium.',
+    image: '/images/strawberry-cheescake.webp',
     category: 'Sobremesas',
   },
  
@@ -100,6 +101,12 @@ const products = [
     image: '/images/bolo-mousse-morango.webp',
     category: 'Sobremesas',
   },
+  {
+    name: 'Bolo de Cenoura',
+    description: 'Um bolo húmido e aromático feito com cenouras frescas. Textura macia e sabor equilibrado que agrada a todos os paladares.',
+    image: '/images/bolo-cenoura.webp',
+    category: 'Sobremesas',
+  },
    {
     name: 'Bolo Mocca',
     description: 'Um bolo rico e aromático com sabor intenso a café e chocolate. Camadas macias e húmidas que derretem na boca, perfeito para os amantes de café.',
@@ -124,12 +131,6 @@ const products = [
   //   image: '/images/tarte-chocolate-caramelo.webp',
   //   category: 'Sobremesas',
   // },
-  {
-    name: 'Bolo de Cenoura',
-    description: 'Um bolo húmido e aromático feito com cenouras frescas. Textura macia e sabor equilibrado que agrada a todos os paladares.',
-    image: '/images/bolo-cenoura.webp',
-    category: 'Sobremesas',
-  },
   {
     name: 'Queques de Maçã e Passas',
     description: 'Queques artesanais macios e aromáticos, repletos de maçã fresca e passas suculentas. Ideais para acompanhar um café ou chá.',
