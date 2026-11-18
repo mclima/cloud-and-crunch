@@ -55,7 +55,7 @@ const products = [
     capacity: '230ml',
     minQuantity: '10',
     price: '1.25',
-    priceNote: 'Total: €11.50 (10 unidades)',
+    priceNote: 'Total: €12.50 (10 unidades)',
     image: '/images/natas-do-ceu-1.webp',
   },
   {
@@ -64,7 +64,7 @@ const products = [
     capacity: '5,5x5,5cm',
     minQuantity: '16',
     price: '1.45',
-    priceNote: 'Total: €22.40 (16 unidades)',
+    priceNote: 'Total: €23.20 (16 unidades)',
     image: '/images/brownie-strawberry-ice-cream-molho-chocolate.webp',
   },
   {
@@ -73,7 +73,7 @@ const products = [
     capacity: '5,25x5cm',
     minQuantity: '24',
     price: '1.25',
-    priceNote: 'Total: €27.60 (24 unidades)',
+    priceNote: 'Total: €30.00 (24 unidades)',
     image: '/images/brownies-5x5.webp',
   },
   {
@@ -173,7 +173,7 @@ const products = [
     capacity: '',
     minQuantity: '12',
     price: '0.79',
-    priceNote: 'Total: €9.45 (12 unidades)',
+    priceNote: 'Total: €9.48 (12 unidades)',
     image: '/images/apple-raisin-queques.webp',
   },
   {
@@ -182,7 +182,7 @@ const products = [
     capacity: '22 Fatias',
     minQuantity: '1',
     price: '0.66',
-    priceNote: 'Total: €14.50 (22 fatias)',
+    priceNote: 'Total: €14.52 (22 fatias)',
     image: '/images/salame-chocolate-1.webp',
   },
   // {
@@ -220,7 +220,7 @@ const bonus = [
     capacity: '12cm',
     minQuantity: '10',
     price: '2.00',
-    priceNote: 'Total: €19.00 (10 unidades) | Cogumelos, espinafres, cenoura, corgete',
+    priceNote: 'Total: €20.00 (10 unidades) | Cogumelos, espinafres, cenoura, corgete',
     image: '/images/quiche-individual.webp',
   },
   // {
