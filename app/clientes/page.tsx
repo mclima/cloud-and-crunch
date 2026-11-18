@@ -63,7 +63,7 @@ const products = [
     format: 'Bolo',
     capacity: '26x6,4cm',
     minQuantity: '1',
-    price: '54.00',
+    price: '48.00',
     image: '/images/strawberry-cheescake.webp',
   },
   {
@@ -124,7 +124,7 @@ const products = [
     format: 'Bolo',
     capacity: '16cm',
     minQuantity: '1',
-    price: '12.00',
+    price: '15.00',
     image: '/images/bolo-mocca-8.webp',
   },
   {
@@ -132,7 +132,7 @@ const products = [
     format: 'Bolo',
     capacity: '24cm',
     minQuantity: '1',
-    price: '23.50',
+    price: '25.00',
     image: '/images/bolo-mocca-16.webp',
   },
   {
@@ -140,7 +140,7 @@ const products = [
     format: 'Bolo',
     capacity: '28cm',
     minQuantity: '1',
-    price: '29.75',
+    price: '32.00',
     image: '/images/bolo-mocca-20.webp',
   },
   // {
@@ -156,7 +156,7 @@ const products = [
     format: 'Bolo',
     capacity: '28cm',
     minQuantity: '1',
-    price: '21.00',
+    price: '23.00',
     image: '/images/bolo-cenoura.webp',
   },
   {
@@ -190,7 +190,7 @@ const products = [
     format: 'Bolo',
     capacity: '24"',
     minQuantity: '1',
-    price: '32.00',
+    price: '35.00',
     priceNote: '+ ± €5.00 recheio | + ± €12.00 toppings (pepitas + fruta)',
     image: '/images/bolo-chocolate-branco.webp',
   },
@@ -199,7 +199,7 @@ const products = [
     format: 'Bolo',
     capacity: '24"',
     minQuantity: '1',
-    price: '29.75',
+    price: '33.00',
     priceNote: '+ ± €10.00 custo de fruta',
     image: '/images/bolo-chocolate-preto.webp',
   },
