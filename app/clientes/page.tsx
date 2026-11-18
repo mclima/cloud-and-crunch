@@ -383,6 +383,9 @@ export default function PrecosPage() {
           <p className="text-sm text-[#8b5a2b] font-medium">
             * Os preços dos produtos não incluem embalagem (preços de embalagem no final da página)
           </p>
+          <p className="text-sm text-[#8b5a2b] font-medium">
+            * Pode também fornecer as suas próprias embalagens
+          </p>
         </div>
 
         {/* Main Products Grid */}
