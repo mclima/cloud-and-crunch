@@ -211,7 +211,7 @@ const bonus = [
     format: 'Tarte',
     capacity: '30cm',
     minQuantity: '1',
-    price: '13.75',
+    price: '15.00',
     image: '/images/quiche-espinafres.webp',
   },
   {
@@ -219,7 +219,7 @@ const bonus = [
     format: 'Tartlete',
     capacity: '12cm',
     minQuantity: '10',
-    price: '1.90',
+    price: '2.00',
     priceNote: 'Total: €19.00 (10 unidades) | Cogumelos, espinafres, cenoura, corgete',
     image: '/images/quiche-individual.webp',
   },
