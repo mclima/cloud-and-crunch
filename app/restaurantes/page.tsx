@@ -76,15 +76,6 @@ const products = [
     image: '/images/brownie-strawberry-ice-cream-molho-chocolate.webp',
   },
   {
-    name: 'Molho de Chocolate',
-    format: 'Dose',
-    capacity: '300ml',
-    minQuantity: '1',
-    price: '9.50',
-    priceNote: 'Em testes para determinar quantos brownies cobre (talvez 16)',
-    image: '/images/brownie-strawberry-ice-cream-molho-chocolate.webp',
-  },
-  {
     name: 'Brownies',
     format: 'Quadrado',
     capacity: '5,25x5cm',
@@ -92,6 +83,15 @@ const products = [
     price: '1.15',
     priceNote: 'Total: €27.60 (24 unidades)',
     image: '/images/brownies-5x5.webp',
+  },
+  {
+    name: 'Molho de Chocolate',
+    format: 'Dose',
+    capacity: '300ml',
+    minQuantity: '1',
+    price: '9.50',
+    priceNote: 'Em testes para determinar quantos brownies cobre (talvez 16)',
+    image: '/images/brownie-strawberry-ice-cream-molho-chocolate.webp',
   },
   {
     name: 'Gelado de Tangerina Caseiro',
