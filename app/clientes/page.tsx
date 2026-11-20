@@ -45,8 +45,8 @@ const products = [
     format: 'Tacinha',
     capacity: '230ml',
     minQuantity: '14',
-    price: '3.75',
-    priceNote: 'Total: €52.50 (14 unidades)',
+    price: '4.00',
+    priceNote: 'Total: €56.00 (14 unidades)',
     image: '/images/mousse-morango.webp',
   },
   {
@@ -314,6 +314,18 @@ export default function PrecosPage() {
         </Script>
       <div className="min-h-screen bg-[#faf6f2] flex items-center justify-center px-4">
         <div className="bg-white rounded-2xl shadow-lg p-8 w-full max-w-md border border-stone-200">
+          <a href="/" className="flex flex-col items-center gap-2 mb-6">
+            <Image
+              src="/images/cloud-crunch-icon.webp"
+              alt="Cloud & Crunch"
+              width={72}
+              height={72}
+              priority
+            />
+            <span className="font-serif text-2xl text-[#3d2d22]">
+              Cloud & Crunch
+            </span>
+          </a>
           <h1 className="text-3xl font-bold text-[#3d2d22] mb-2 text-center">
             Tabela de Preços
           </h1>
@@ -374,6 +386,18 @@ export default function PrecosPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header */}
         <div className="text-center mb-12">
+          <a href="/" className="inline-flex flex-col items-center gap-2 mb-8">
+            <Image
+              src="/images/cloud-crunch-icon.webp"
+              alt="Cloud & Crunch"
+              width={96}
+              height={96}
+              priority
+            />
+            <span className="font-serif text-3xl text-[#3d2d22]">
+              Cloud & Crunch
+            </span>
+          </a>
           <h1 className="text-4xl md:text-5xl font-bold text-[#3d2d22] mb-4">
             Tabela de Preços
           </h1>
